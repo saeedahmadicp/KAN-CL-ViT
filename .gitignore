@@ -7,6 +7,7 @@ __pycache__/
 ## data
 data/
 saved_models/
+*.pth
 
 # C extensions
 *.so
