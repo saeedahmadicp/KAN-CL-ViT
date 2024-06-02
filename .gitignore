@@ -8,6 +8,7 @@ __pycache__/
 data/
 saved_models/
 *.pth
+graphs/
 
 # C extensions
 *.so
