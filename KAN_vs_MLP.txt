@@ -1,0 +1,1697 @@
+Model name: ----------- MLP --------------
+Dataset name: ----------- CIFAR10 --------------
+Epoch: 0
+Train Loss: 1.7325271111924936
+Train Accuracy: 0.40611013427109977
+Epoch Time: 2.8732268810272217
+Average time per iteration: 0.0036742031726690813
+-------------------------------------------------
+Validation Loss: 1.5315264379902251
+Validation Accuracy: 0.45820063694267515
+Validation Time: 0.02929067611694336
+Average time per iteration: 0.00018656481603148637
+-------------------------------------------------
+Model name: ----------- MLP --------------
+Dataset name: ----------- CIFAR10 --------------
+Epoch: 0
+Train Loss: 1.7342320451955966
+Train Accuracy: 0.4053708439897698
+Epoch Time: 2.8524725437164307
+Average time per iteration: 0.003647663099381625
+-------------------------------------------------
+Validation Loss: 1.5630235717554761
+Validation Accuracy: 0.4453622611464968
+Validation Time: 0.03660726547241211
+Average time per iteration: 0.0002331672960026249
+-------------------------------------------------
+Epoch: 1
+Train Loss: 1.5071471113225687
+Train Accuracy: 0.4734055306905371
+Epoch Time: 1.0468332767486572
+Average time per iteration: 0.0013386614792182318
+-------------------------------------------------
+Validation Loss: 1.5023612057327465
+Validation Accuracy: 0.4791998407643312
+Validation Time: 0.03994917869567871
+Average time per iteration: 0.00025445336748839944
+-------------------------------------------------
+Epoch: 2
+Train Loss: 1.4309175469533866
+Train Accuracy: 0.5022778132992327
+Epoch Time: 1.1063716411590576
+Average time per iteration: 0.001414797495088309
+-------------------------------------------------
+Validation Loss: 1.5048990925406194
+Validation Accuracy: 0.47770700636942676
+Validation Time: 0.0399625301361084
+Average time per iteration: 0.0002545384085102446
+-------------------------------------------------
+Epoch: 3
+Train Loss: 1.3752021711805593
+Train Accuracy: 0.5222985933503836
+Epoch Time: 1.0239589214324951
+Average time per iteration: 0.0013094103854635487
+-------------------------------------------------
+Validation Loss: 1.4781627579099814
+Validation Accuracy: 0.4902468152866242
+Validation Time: 0.035427093505859375
+Average time per iteration: 0.00022565027710738455
+-------------------------------------------------
+Epoch: 4
+Train Loss: 1.3225189810976044
+Train Accuracy: 0.5440377237851662
+Epoch Time: 1.028395175933838
+Average time per iteration: 0.001315083345183936
+-------------------------------------------------
+Validation Loss: 1.5105359630220254
+Validation Accuracy: 0.4895501592356688
+Validation Time: 0.035524606704711914
+Average time per iteration: 0.00022627138028478926
+-------------------------------------------------
+Epoch: 5
+Train Loss: 1.2786664958957517
+Train Accuracy: 0.5584638746803069
+Epoch Time: 1.006753921508789
+Average time per iteration: 0.0012874091067887328
+-------------------------------------------------
+Validation Loss: 1.484048271634776
+Validation Accuracy: 0.5021894904458599
+Validation Time: 0.029409170150756836
+Average time per iteration: 0.00018731955510036203
+-------------------------------------------------
+Epoch: 6
+Train Loss: 1.2411993715311864
+Train Accuracy: 0.5723105818414322
+Epoch Time: 0.9927768707275391
+Average time per iteration: 0.0012695356403165461
+-------------------------------------------------
+Validation Loss: 1.4767519729152607
+Validation Accuracy: 0.503781847133758
+Validation Time: 0.02119159698486328
+Average time per iteration: 0.0001349783247443521
+-------------------------------------------------
+Epoch: 7
+Train Loss: 1.195413358147492
+Train Accuracy: 0.5852581521739131
+Epoch Time: 1.016460657119751
+Average time per iteration: 0.0012998218121735947
+-------------------------------------------------
+Validation Loss: 1.5342785856526369
+Validation Accuracy: 0.4947253184713376
+Validation Time: 0.024726390838623047
+Average time per iteration: 0.0001574929352778538
+-------------------------------------------------
+Epoch: 8
+Train Loss: 1.1573243242547946
+Train Accuracy: 0.6039402173913043
+Epoch Time: 1.0269694328308105
+Average time per iteration: 0.001313260144284924
+-------------------------------------------------
+Validation Loss: 1.5068257359942054
+Validation Accuracy: 0.5102507961783439
+Validation Time: 0.025449037551879883
+Average time per iteration: 0.00016209578058522218
+-------------------------------------------------
+Epoch: 9
+Train Loss: 1.1252090122236316
+Train Accuracy: 0.6158687659846548
+Epoch Time: 1.006427526473999
+Average time per iteration: 0.0012869917218337583
+-------------------------------------------------
+Validation Loss: 1.5615406871601274
+Validation Accuracy: 0.506468949044586
+Validation Time: 0.03200101852416992
+Average time per iteration: 0.00020382814346605046
+-------------------------------------------------
+Model name: ----------- EfficientKAN --------------
+Dataset name: ----------- CIFAR10 --------------
+Epoch: 0
+Train Loss: 1.6009312583052593
+Train Accuracy: 0.4351822250639386
+Epoch Time: 3.2931101322174072
+Average time per iteration: 0.004211138276492848
+-------------------------------------------------
+Validation Loss: 1.451573901115709
+Validation Accuracy: 0.4846735668789809
+Validation Time: 0.278517484664917
+Average time per iteration: 0.0017739967176109363
+-------------------------------------------------
+Epoch: 1
+Train Loss: 1.306934869960141
+Train Accuracy: 0.540421195652174
+Epoch Time: 3.2178046703338623
+Average time per iteration: 0.004114839731884735
+-------------------------------------------------
+Validation Loss: 1.387540068596032
+Validation Accuracy: 0.5116441082802548
+Validation Time: 0.2796339988708496
+Average time per iteration: 0.0017811082730627363
+-------------------------------------------------
+Epoch: 2
+Train Loss: 1.1138301344631274
+Train Accuracy: 0.607696611253197
+Epoch Time: 3.1871426105499268
+Average time per iteration: 0.004075629936764612
+-------------------------------------------------
+Validation Loss: 1.3881637286988033
+Validation Accuracy: 0.5242834394904459
+Validation Time: 0.28151869773864746
+Average time per iteration: 0.0017931127244499839
+-------------------------------------------------
+Epoch: 3
+Train Loss: 0.9166537748883142
+Train Accuracy: 0.6794477301790282
+Epoch Time: 3.1968274116516113
+Average time per iteration: 0.004088014592904874
+-------------------------------------------------
+Validation Loss: 1.4557944289438285
+Validation Accuracy: 0.5164211783439491
+Validation Time: 0.2764294147491455
+Average time per iteration: 0.0017606969092302262
+-------------------------------------------------
+Epoch: 4
+Train Loss: 0.7164623345179326
+Train Accuracy: 0.7495404411764706
+Epoch Time: 3.1643927097320557
+Average time per iteration: 0.0040465379919847255
+-------------------------------------------------
+Validation Loss: 1.5804943096865514
+Validation Accuracy: 0.5258757961783439
+Validation Time: 0.2723848819732666
+Average time per iteration: 0.001734935553969851
+-------------------------------------------------
+Epoch: 5
+Train Loss: 0.5339855477594964
+Train Accuracy: 0.816036604859335
+Epoch Time: 3.1828982830047607
+Average time per iteration: 0.004070202407934476
+-------------------------------------------------
+Validation Loss: 1.7570382493316747
+Validation Accuracy: 0.5166202229299363
+Validation Time: 0.2855520248413086
+Average time per iteration: 0.0018188027059955962
+-------------------------------------------------
+Epoch: 6
+Train Loss: 0.38636510293273363
+Train Accuracy: 0.8692854859335039
+Epoch Time: 3.2186875343322754
+Average time per iteration: 0.004115968713979892
+-------------------------------------------------
+Validation Loss: 1.933921372814543
+Validation Accuracy: 0.520203025477707
+Validation Time: 0.2795097827911377
+Average time per iteration: 0.0017803170878416413
+-------------------------------------------------
+Epoch: 7
+Train Loss: 0.28985207882302494
+Train Accuracy: 0.9026334718670077
+Epoch Time: 3.2643179893493652
+Average time per iteration: 0.004174319679474891
+-------------------------------------------------
+Validation Loss: 2.1257650768680936
+Validation Accuracy: 0.5227906050955414
+Validation Time: 0.2832977771759033
+Average time per iteration: 0.0018044444406108491
+-------------------------------------------------
+Epoch: 8
+Train Loss: 0.22919752736530646
+Train Accuracy: 0.9226942135549873
+Epoch Time: 3.2436418533325195
+Average time per iteration: 0.004147879607842096
+-------------------------------------------------
+Validation Loss: 2.3065821972622236
+Validation Accuracy: 0.5201035031847133
+Validation Time: 0.28145503997802734
+Average time per iteration: 0.0017927072610065436
+-------------------------------------------------
+Epoch: 9
+Train Loss: 0.18919391368927857
+Train Accuracy: 0.9349624360613811
+Epoch Time: 3.207967519760132
+Average time per iteration: 0.004102260255447739
+-------------------------------------------------
+Validation Loss: 2.5708386928412565
+Validation Accuracy: 0.5132364649681529
+Validation Time: 0.28706979751586914
+Average time per iteration: 0.001828470047871778
+-------------------------------------------------
+Model name: ----------- FastKAN --------------
+Dataset name: ----------- CIFAR10 --------------
+Epoch: 0
+Train Loss: 1.766742464526535
+Train Accuracy: 0.41216432225063937
+Epoch Time: 1.8815348148345947
+Average time per iteration: 0.0024060547504278704
+-------------------------------------------------
+Validation Loss: 1.536120830068163
+Validation Accuracy: 0.45581210191082805
+Validation Time: 0.10020613670349121
+Average time per iteration: 0.0006382556477929377
+-------------------------------------------------
+Epoch: 1
+Train Loss: 1.287721551745139
+Train Accuracy: 0.5482736572890026
+Epoch Time: 1.8839542865753174
+Average time per iteration: 0.002409148704060508
+-------------------------------------------------
+Validation Loss: 1.397159804204467
+Validation Accuracy: 0.5136345541401274
+Validation Time: 0.10721325874328613
+Average time per iteration: 0.0006828869983648799
+-------------------------------------------------
+Epoch: 2
+Train Loss: 1.0749866216993698
+Train Accuracy: 0.6257792519181585
+Epoch Time: 1.9138267040252686
+Average time per iteration: 0.0024473487263750237
+-------------------------------------------------
+Validation Loss: 1.374299451424058
+Validation Accuracy: 0.5262738853503185
+Validation Time: 0.11532807350158691
+Average time per iteration: 0.0007345737165706173
+-------------------------------------------------
+Epoch: 3
+Train Loss: 0.8552864316631766
+Train Accuracy: 0.704863331202046
+Epoch Time: 1.8933429718017578
+Average time per iteration: 0.0024211546953986675
+-------------------------------------------------
+Validation Loss: 1.4319519222162331
+Validation Accuracy: 0.5282643312101911
+Validation Time: 0.09685754776000977
+Average time per iteration: 0.0006169270557962405
+-------------------------------------------------
+Epoch: 4
+Train Loss: 0.6330737766173794
+Train Accuracy: 0.787264226342711
+Epoch Time: 1.854705810546875
+Average time per iteration: 0.0023717465608016305
+-------------------------------------------------
+Validation Loss: 1.5650371985071023
+Validation Accuracy: 0.5163216560509554
+Validation Time: 0.09511542320251465
+Average time per iteration: 0.0006058307210351252
+-------------------------------------------------
+Epoch: 5
+Train Loss: 0.4358619981638306
+Train Accuracy: 0.8584159207161125
+Epoch Time: 1.8751163482666016
+Average time per iteration: 0.0023978469926682886
+-------------------------------------------------
+Validation Loss: 1.6280371634064206
+Validation Accuracy: 0.538515127388535
+Validation Time: 0.10432696342468262
+Average time per iteration: 0.0006645029517495708
+-------------------------------------------------
+Epoch: 6
+Train Loss: 0.282598883113669
+Train Accuracy: 0.9118246483375959
+Epoch Time: 1.8747949600219727
+Average time per iteration: 0.002397436010258277
+-------------------------------------------------
+Validation Loss: 1.7571542832502134
+Validation Accuracy: 0.5289609872611465
+Validation Time: 0.09251594543457031
+Average time per iteration: 0.0005892735377998109
+-------------------------------------------------
+Epoch: 7
+Train Loss: 0.20201299332863534
+Train Accuracy: 0.9374200767263428
+Epoch Time: 1.835531234741211
+Average time per iteration: 0.002347226642891574
+-------------------------------------------------
+Validation Loss: 1.9289633939220647
+Validation Accuracy: 0.5188097133757962
+Validation Time: 0.08967852592468262
+Average time per iteration: 0.0005712008020680422
+-------------------------------------------------
+Epoch: 8
+Train Loss: 0.15272857699438433
+Train Accuracy: 0.953244884910486
+Epoch Time: 1.8404600620269775
+Average time per iteration: 0.0023535294910830913
+-------------------------------------------------
+Validation Loss: 2.0595558319881464
+Validation Accuracy: 0.5230891719745223
+Validation Time: 0.08863162994384766
+Average time per iteration: 0.0005645326748015774
+-------------------------------------------------
+Epoch: 9
+Train Loss: 0.1346209755457957
+Train Accuracy: 0.9569013746803069
+Epoch Time: 1.8400559425354004
+Average time per iteration: 0.0023530127142396425
+-------------------------------------------------
+Validation Loss: 2.1889804685191745
+Validation Accuracy: 0.5192078025477707
+Validation Time: 0.10075855255126953
+Average time per iteration: 0.0006417742200717805
+-------------------------------------------------
+Model name: ----------- MLP --------------
+Dataset name: ----------- CIFAR10 --------------
+Epoch: 0
+Train Loss: 1.7010036963026236
+Train Accuracy: 0.40325287723785164
+Epoch Time: 2.866649627685547
+Average time per iteration: 0.0036657923627692415
+-------------------------------------------------
+Validation Loss: 1.56235998906907
+Validation Accuracy: 0.44446656050955413
+Validation Time: 0.025859594345092773
+Average time per iteration: 0.00016471079200696033
+-------------------------------------------------
+Epoch: 1
+Train Loss: 1.4663987984437772
+Train Accuracy: 0.4841751918158568
+Epoch Time: 0.9814064502716064
+Average time per iteration: 0.001254995460705379
+-------------------------------------------------
+Validation Loss: 1.4542113124944602
+Validation Accuracy: 0.4817874203821656
+Validation Time: 0.033087968826293945
+Average time per iteration: 0.0002107513937980506
+-------------------------------------------------
+Epoch: 2
+Train Loss: 1.3603266577434052
+Train Accuracy: 0.5246962915601023
+Epoch Time: 0.9733681678771973
+Average time per iteration: 0.001244716327208692
+-------------------------------------------------
+Validation Loss: 1.4201201375123043
+Validation Accuracy: 0.49761146496815284
+Validation Time: 0.024637460708618164
+Average time per iteration: 0.00015692650132877813
+-------------------------------------------------
+Epoch: 3
+Train Loss: 1.27163834317261
+Train Accuracy: 0.5545276534526854
+Epoch Time: 0.9835665225982666
+Average time per iteration: 0.0012577577015323103
+-------------------------------------------------
+Validation Loss: 1.398072956473964
+Validation Accuracy: 0.5058718152866242
+Validation Time: 0.03126049041748047
+Average time per iteration: 0.00019911140393299661
+-------------------------------------------------
+Epoch: 4
+Train Loss: 1.2009631204788032
+Train Accuracy: 0.5814418158567775
+Epoch Time: 0.9735736846923828
+Average time per iteration: 0.0012449791364352722
+-------------------------------------------------
+Validation Loss: 1.3780671388480314
+Validation Accuracy: 0.5164211783439491
+Validation Time: 0.024790287017822266
+Average time per iteration: 0.00015789991731096983
+-------------------------------------------------
+Epoch: 5
+Train Loss: 1.141968917968633
+Train Accuracy: 0.6022418478260869
+Epoch Time: 0.9915828704833984
+Average time per iteration: 0.001268008785784397
+-------------------------------------------------
+Validation Loss: 1.3440190967480847
+Validation Accuracy: 0.5288614649681529
+Validation Time: 0.02194833755493164
+Average time per iteration: 0.00013979832837536076
+-------------------------------------------------
+Epoch: 6
+Train Loss: 1.0889476696243676
+Train Accuracy: 0.6234414961636828
+Epoch Time: 0.9914872646331787
+Average time per iteration: 0.0012678865276639114
+-------------------------------------------------
+Validation Loss: 1.3290173946672184
+Validation Accuracy: 0.5342356687898089
+Validation Time: 0.030173301696777344
+Average time per iteration: 0.00019218663501132066
+-------------------------------------------------
+Epoch: 7
+Train Loss: 1.0433438662677774
+Train Accuracy: 0.6402653452685422
+Epoch Time: 0.9939844608306885
+Average time per iteration: 0.0012710798731850237
+-------------------------------------------------
+Validation Loss: 1.3385020270469083
+Validation Accuracy: 0.533937101910828
+Validation Time: 0.022080421447753906
+Average time per iteration: 0.00014063962705575735
+-------------------------------------------------
+Epoch: 8
+Train Loss: 1.00706291053911
+Train Accuracy: 0.6528332800511509
+Epoch Time: 0.9897646903991699
+Average time per iteration: 0.0012656837473135165
+-------------------------------------------------
+Validation Loss: 1.3288027932689448
+Validation Accuracy: 0.5388136942675159
+Validation Time: 0.028450489044189453
+Average time per iteration: 0.00018121330601394555
+-------------------------------------------------
+Epoch: 9
+Train Loss: 0.9748752048558287
+Train Accuracy: 0.6657808503836317
+Epoch Time: 0.9883167743682861
+Average time per iteration: 0.001263832192286811
+-------------------------------------------------
+Validation Loss: 1.3236347930446553
+Validation Accuracy: 0.541202229299363
+Validation Time: 0.02908015251159668
+Average time per iteration: 0.00018522390134774954
+-------------------------------------------------
+Model name: ----------- EfficientKAN --------------
+Dataset name: ----------- CIFAR10 --------------
+Epoch: 0
+Train Loss: 1.5471776196413942
+Train Accuracy: 0.4497882033248082
+Epoch Time: 3.2219367027282715
+Average time per iteration: 0.004120123660777841
+-------------------------------------------------
+Validation Loss: 1.4118248345745597
+Validation Accuracy: 0.49572054140127386
+Validation Time: 0.2697172164916992
+Average time per iteration: 0.0017179440540872563
+-------------------------------------------------
+Epoch: 1
+Train Loss: 1.2520148257922639
+Train Accuracy: 0.5567255434782609
+Epoch Time: 3.1855196952819824
+Average time per iteration: 0.004073554597547292
+-------------------------------------------------
+Validation Loss: 1.313563021504955
+Validation Accuracy: 0.5329418789808917
+Validation Time: 0.28443241119384766
+Average time per iteration: 0.0018116714088780106
+-------------------------------------------------
+Epoch: 2
+Train Loss: 1.0787236164597904
+Train Accuracy: 0.6193853900255755
+Epoch Time: 3.2015135288238525
+Average time per iteration: 0.004094007070107228
+-------------------------------------------------
+Validation Loss: 1.2778693946303836
+Validation Accuracy: 0.555234872611465
+Validation Time: 0.2815835475921631
+Average time per iteration: 0.0017935257808418031
+-------------------------------------------------
+Epoch: 3
+Train Loss: 0.9299177412334305
+Train Accuracy: 0.6737931585677749
+Epoch Time: 3.3070156574249268
+Average time per iteration: 0.004228920278036991
+-------------------------------------------------
+Validation Loss: 1.2570030169122537
+Validation Accuracy: 0.564390923566879
+Validation Time: 0.27794957160949707
+Average time per iteration: 0.001770379437003166
+-------------------------------------------------
+Epoch: 4
+Train Loss: 0.7998101418585424
+Train Accuracy: 0.7264226342710998
+Epoch Time: 3.2239952087402344
+Average time per iteration: 0.004122756021406949
+-------------------------------------------------
+Validation Loss: 1.2682061855960045
+Validation Accuracy: 0.5722531847133758
+Validation Time: 0.2802999019622803
+Average time per iteration: 0.0017853496940272628
+-------------------------------------------------
+Epoch: 5
+Train Loss: 0.6898315478392574
+Train Accuracy: 0.7707800511508951
+Epoch Time: 3.2398550510406494
+Average time per iteration: 0.004143037149668349
+-------------------------------------------------
+Validation Loss: 1.2821138918779458
+Validation Accuracy: 0.5757364649681529
+Validation Time: 0.28638482093811035
+Average time per iteration: 0.001824107139733187
+-------------------------------------------------
+Epoch: 6
+Train Loss: 0.5987113950883641
+Train Accuracy: 0.8045076726342711
+Epoch Time: 3.227496385574341
+Average time per iteration: 0.004127233229634707
+-------------------------------------------------
+Validation Loss: 1.2988497914781996
+Validation Accuracy: 0.5745421974522293
+Validation Time: 0.2835540771484375
+Average time per iteration: 0.0018060769245123408
+-------------------------------------------------
+Epoch: 7
+Train Loss: 0.5237169211630321
+Train Accuracy: 0.8376358695652174
+Epoch Time: 3.2419300079345703
+Average time per iteration: 0.004145690547230909
+-------------------------------------------------
+Validation Loss: 1.3168209252084138
+Validation Accuracy: 0.5751393312101911
+Validation Time: 0.28629422187805176
+Average time per iteration: 0.0018235300756563805
+-------------------------------------------------
+Epoch: 8
+Train Loss: 0.46398293987259537
+Train Accuracy: 0.8598745204603581
+Epoch Time: 3.26894211769104
+Average time per iteration: 0.004180232887072941
+-------------------------------------------------
+Validation Loss: 1.3389323008288243
+Validation Accuracy: 0.573546974522293
+Validation Time: 0.28370118141174316
+Average time per iteration: 0.0018070138943423132
+-------------------------------------------------
+Epoch: 9
+Train Loss: 0.4175124966618045
+Train Accuracy: 0.8817535166240409
+Epoch Time: 3.2299211025238037
+Average time per iteration: 0.004130333890695401
+-------------------------------------------------
+Validation Loss: 1.356801752072231
+Validation Accuracy: 0.5744426751592356
+Validation Time: 0.27689671516418457
+Average time per iteration: 0.0017636733449948063
+-------------------------------------------------
+Model name: ----------- FastKAN --------------
+Dataset name: ----------- CIFAR10 --------------
+Epoch: 0
+Train Loss: 1.7569306026334348
+Train Accuracy: 0.4157808503836317
+Epoch Time: 1.884183406829834
+Average time per iteration: 0.002409441696713343
+-------------------------------------------------
+Validation Loss: 1.4532628871832685
+Validation Accuracy: 0.4903463375796178
+Validation Time: 0.08594012260437012
+Average time per iteration: 0.000547389315951402
+-------------------------------------------------
+Epoch: 1
+Train Loss: 1.2618301225745159
+Train Accuracy: 0.5603220907928389
+Epoch Time: 1.887514352798462
+Average time per iteration: 0.0024137012184123553
+-------------------------------------------------
+Validation Loss: 1.38491891523835
+Validation Accuracy: 0.5139331210191083
+Validation Time: 0.10055685043334961
+Average time per iteration: 0.0006404894932060484
+-------------------------------------------------
+Epoch: 2
+Train Loss: 0.9977672970508371
+Train Accuracy: 0.6567495204603581
+Epoch Time: 1.8513283729553223
+Average time per iteration: 0.002367427586899389
+-------------------------------------------------
+Validation Loss: 1.3971748272324824
+Validation Accuracy: 0.518312101910828
+Validation Time: 0.1124563217163086
+Average time per iteration: 0.0007162823039255325
+-------------------------------------------------
+Epoch: 3
+Train Loss: 0.7263084954922766
+Train Accuracy: 0.7564937659846548
+Epoch Time: 1.862123727798462
+Average time per iteration: 0.0023812323884890817
+-------------------------------------------------
+Validation Loss: 1.4443509586297782
+Validation Accuracy: 0.5149283439490446
+Validation Time: 0.10418415069580078
+Average time per iteration: 0.0006635933165337629
+-------------------------------------------------
+Epoch: 4
+Train Loss: 0.4470994570447356
+Train Accuracy: 0.8669876918158568
+Epoch Time: 1.8617198467254639
+Average time per iteration: 0.002380715916528726
+-------------------------------------------------
+Validation Loss: 1.48657272158155
+Validation Accuracy: 0.5302547770700637
+Validation Time: 0.10021138191223145
+Average time per iteration: 0.0006382890567658054
+-------------------------------------------------
+Epoch: 5
+Train Loss: 0.23649513010707351
+Train Accuracy: 0.9479499680306905
+Epoch Time: 1.8740012645721436
+Average time per iteration: 0.002396421054440081
+-------------------------------------------------
+Validation Loss: 1.5850747983167126
+Validation Accuracy: 0.5365246815286624
+Validation Time: 0.10752511024475098
+Average time per iteration: 0.0006848733136608343
+-------------------------------------------------
+Epoch: 6
+Train Loss: 0.11358016072903447
+Train Accuracy: 0.9867527173913043
+Epoch Time: 1.882214069366455
+Average time per iteration: 0.002406923362361196
+-------------------------------------------------
+Validation Loss: 1.6566353762985035
+Validation Accuracy: 0.5306528662420382
+Validation Time: 0.09583759307861328
+Average time per iteration: 0.0006104305291631419
+-------------------------------------------------
+Epoch: 7
+Train Loss: 0.05708673149537857
+Train Accuracy: 0.9972226662404092
+Epoch Time: 1.8208825588226318
+Average time per iteration: 0.0023284943207450533
+-------------------------------------------------
+Validation Loss: 1.703991735816761
+Validation Accuracy: 0.5383160828025477
+Validation Time: 0.09392333030700684
+Average time per iteration: 0.0005982377726560945
+-------------------------------------------------
+Epoch: 8
+Train Loss: 0.031915464855330374
+Train Accuracy: 0.9994005754475703
+Epoch Time: 1.8354692459106445
+Average time per iteration: 0.002347147373287269
+-------------------------------------------------
+Validation Loss: 1.7777563561299803
+Validation Accuracy: 0.5399084394904459
+Validation Time: 0.10258746147155762
+Average time per iteration: 0.0006534233214748893
+-------------------------------------------------
+Epoch: 9
+Train Loss: 0.02052490677103362
+Train Accuracy: 0.9997602301790282
+Epoch Time: 1.8611936569213867
+Average time per iteration: 0.0023800430395414154
+-------------------------------------------------
+Validation Loss: 1.8252542983194826
+Validation Accuracy: 0.5432921974522293
+Validation Time: 0.10218071937561035
+Average time per iteration: 0.0006508326074879641
+-------------------------------------------------
+Model name: ----------- MLP --------------
+Dataset name: ----------- CIFAR10 --------------
+Epoch: 0
+Train Loss: 1.6969971059228453
+Train Accuracy: 0.4062699808184143
+Epoch Time: 2.902366876602173
+Average time per iteration: 0.0037114665941204257
+-------------------------------------------------
+Validation Loss: 1.5497248932054848
+Validation Accuracy: 0.4515326433121019
+Validation Time: 0.031996965408325195
+Average time per iteration: 0.00020380232744156176
+-------------------------------------------------
+Epoch: 1
+Train Loss: 1.4660032466244515
+Train Accuracy: 0.4820772058823529
+Epoch Time: 1.010695219039917
+Average time per iteration: 0.001292449129207055
+-------------------------------------------------
+Validation Loss: 1.476692331824333
+Validation Accuracy: 0.4775079617834395
+Validation Time: 0.036011695861816406
+Average time per iteration: 0.00022937385899246117
+-------------------------------------------------
+Epoch: 2
+Train Loss: 1.3545179194044275
+Train Accuracy: 0.5254755434782609
+Epoch Time: 1.0458548069000244
+Average time per iteration: 0.0013374102390025888
+-------------------------------------------------
+Validation Loss: 1.4074449083607667
+Validation Accuracy: 0.5057722929936306
+Validation Time: 0.027992963790893555
+Average time per iteration: 0.0001782991324260736
+-------------------------------------------------
+Epoch: 3
+Train Loss: 1.2671414967388144
+Train Accuracy: 0.5541480179028133
+Epoch Time: 1.0462775230407715
+Average time per iteration: 0.0013379507967273294
+-------------------------------------------------
+Validation Loss: 1.3834565505859957
+Validation Accuracy: 0.5107484076433121
+Validation Time: 0.03470635414123535
+Average time per iteration: 0.0002210595805174226
+-------------------------------------------------
+Epoch: 4
+Train Loss: 1.194300162212928
+Train Accuracy: 0.5820612212276215
+Epoch Time: 1.01167893409729
+Average time per iteration: 0.0012937070768507546
+-------------------------------------------------
+Validation Loss: 1.346431409097781
+Validation Accuracy: 0.529359076433121
+Validation Time: 0.024281978607177734
+Average time per iteration: 0.00015466228412215117
+-------------------------------------------------
+Epoch: 5
+Train Loss: 1.1361040045385775
+Train Accuracy: 0.6026414641943734
+Epoch Time: 1.0197885036468506
+Average time per iteration: 0.0013040773703923922
+-------------------------------------------------
+Validation Loss: 1.3365752678008596
+Validation Accuracy: 0.5303542993630573
+Validation Time: 0.03496289253234863
+Average time per iteration: 0.00022269358300859002
+-------------------------------------------------
+Epoch: 6
+Train Loss: 1.0839960294611313
+Train Accuracy: 0.6237212276214834
+Epoch Time: 1.0214803218841553
+Average time per iteration: 0.001306240820823728
+-------------------------------------------------
+Validation Loss: 1.3343305386555422
+Validation Accuracy: 0.5330414012738853
+Validation Time: 0.03023219108581543
+Average time per iteration: 0.00019256172666124477
+-------------------------------------------------
+Epoch: 7
+Train Loss: 1.0373748356424024
+Train Accuracy: 0.6399456521739131
+Epoch Time: 1.0147225856781006
+Average time per iteration: 0.0012975992144221235
+-------------------------------------------------
+Validation Loss: 1.3269240780241172
+Validation Accuracy: 0.5376194267515924
+Validation Time: 0.04052615165710449
+Average time per iteration: 0.00025812835450385026
+-------------------------------------------------
+Epoch: 8
+Train Loss: 1.0029124384341033
+Train Accuracy: 0.6528932225063938
+Epoch Time: 1.0154433250427246
+Average time per iteration: 0.0012985208760137143
+-------------------------------------------------
+Validation Loss: 1.3257159738783624
+Validation Accuracy: 0.5406050955414012
+Validation Time: 0.02058243751525879
+Average time per iteration: 0.00013109832812266745
+-------------------------------------------------
+Epoch: 9
+Train Loss: 0.972499650457631
+Train Accuracy: 0.6662603900255755
+Epoch Time: 1.005265235900879
+Average time per iteration: 0.0012855054167530422
+-------------------------------------------------
+Validation Loss: 1.3230075786827475
+Validation Accuracy: 0.5443869426751592
+Validation Time: 0.036911964416503906
+Average time per iteration: 0.00023510805360830515
+-------------------------------------------------
+Model name: ----------- EfficientKAN --------------
+Dataset name: ----------- MNIST --------------
+Model name: ----------- MLP --------------
+Dataset name: ----------- CIFAR10 --------------
+Epoch: 0
+Train Loss: 1.697327245684231
+Train Accuracy: 0.40573049872122763
+Epoch Time: 2.9371182918548584
+Average time per iteration: 0.0037559057440599212
+-------------------------------------------------
+Validation Loss: 1.5413998152799666
+Validation Accuracy: 0.4515326433121019
+Validation Time: 0.024211406707763672
+Average time per iteration: 0.00015421278157811257
+-------------------------------------------------
+Epoch: 1
+Train Loss: 1.4610765080927584
+Train Accuracy: 0.48619325447570333
+Epoch Time: 1.048710823059082
+Average time per iteration: 0.0013410624335793888
+-------------------------------------------------
+Validation Loss: 1.49110109335298
+Validation Accuracy: 0.4756170382165605
+Validation Time: 0.027387380599975586
+Average time per iteration: 0.00017444191464952602
+-------------------------------------------------
+Epoch: 2
+Train Loss: 1.3535586984261223
+Train Accuracy: 0.5232576726342711
+Epoch Time: 1.0522723197937012
+Average time per iteration: 0.0013456167772297968
+-------------------------------------------------
+Validation Loss: 1.4097517144148517
+Validation Accuracy: 0.5075636942675159
+Validation Time: 0.03341937065124512
+Average time per iteration: 0.00021286223344742114
+-------------------------------------------------
+Epoch: 3
+Train Loss: 1.2689019559746813
+Train Accuracy: 0.557844469309463
+Epoch Time: 0.9946839809417725
+Average time per iteration: 0.0012719744001812947
+-------------------------------------------------
+Validation Loss: 1.3757568821785555
+Validation Accuracy: 0.5157245222929936
+Validation Time: 0.03319430351257324
+Average time per iteration: 0.00021142868479346013
+-------------------------------------------------
+Epoch: 4
+Train Loss: 1.1993979906944363
+Train Accuracy: 0.5813818734015346
+Epoch Time: 1.0039756298065186
+Average time per iteration: 0.0012838563041004073
+-------------------------------------------------
+Validation Loss: 1.3463151933281285
+Validation Accuracy: 0.5259753184713376
+Validation Time: 0.027084827423095703
+Average time per iteration: 0.00017251482435092804
+-------------------------------------------------
+Epoch: 5
+Train Loss: 1.134696266230415
+Train Accuracy: 0.604539641943734
+Epoch Time: 1.0590291023254395
+Average time per iteration: 0.0013542571640990275
+-------------------------------------------------
+Validation Loss: 1.3508145376375527
+Validation Accuracy: 0.5267714968152867
+Validation Time: 0.03098893165588379
+Average time per iteration: 0.00019738173029225343
+-------------------------------------------------
+Epoch: 6
+Train Loss: 1.085234973817835
+Train Accuracy: 0.6236812659846548
+Epoch Time: 1.0636050701141357
+Average time per iteration: 0.001360108785312194
+-------------------------------------------------
+Validation Loss: 1.32516769922463
+Validation Accuracy: 0.5407046178343949
+Validation Time: 0.033898353576660156
+Average time per iteration: 0.00021591308010611565
+-------------------------------------------------
+Epoch: 7
+Train Loss: 1.038926779004314
+Train Accuracy: 0.6403252877237852
+Epoch Time: 1.086547613143921
+Average time per iteration: 0.0013894470756316123
+-------------------------------------------------
+Validation Loss: 1.3346749525161306
+Validation Accuracy: 0.535031847133758
+Validation Time: 0.031174421310424805
+Average time per iteration: 0.0001985631930600306
+-------------------------------------------------
+Epoch: 8
+Train Loss: 1.0020696717454953
+Train Accuracy: 0.6544916879795396
+Epoch Time: 1.0366289615631104
+Average time per iteration: 0.0013256124828172767
+-------------------------------------------------
+Validation Loss: 1.322571381641801
+Validation Accuracy: 0.5438893312101911
+Validation Time: 0.028916120529174805
+Average time per iteration: 0.00018417911165079495
+-------------------------------------------------
+Epoch: 9
+Train Loss: 0.9722108793685503
+Train Accuracy: 0.6678988171355499
+Epoch Time: 1.0162367820739746
+Average time per iteration: 0.0012995355269488167
+-------------------------------------------------
+Validation Loss: 1.3242400573317412
+Validation Accuracy: 0.5416998407643312
+Validation Time: 0.02739739418029785
+Average time per iteration: 0.00017450569541590987
+-------------------------------------------------
+Model name: ----------- MLP --------------
+Dataset name: ----------- CIFAR10 --------------
+Epoch: 0
+Train Loss: 1.694716355684773
+Train Accuracy: 0.40710917519181583
+Epoch Time: 2.973083257675171
+Average time per iteration: 0.0038018967489452313
+-------------------------------------------------
+Validation Loss: 1.5423909805382892
+Validation Accuracy: 0.45003980891719747
+Validation Time: 0.033357858657836914
+Average time per iteration: 0.00021247043731106315
+-------------------------------------------------
+Epoch: 1
+Train Loss: 1.4662939290256451
+Train Accuracy: 0.483695652173913
+Epoch Time: 1.0312764644622803
+Average time per iteration: 0.0013187678573686448
+-------------------------------------------------
+Validation Loss: 1.4546303301100518
+Validation Accuracy: 0.48686305732484075
+Validation Time: 0.030055999755859375
+Average time per iteration: 0.00019143948889082405
+-------------------------------------------------
+Epoch: 2
+Train Loss: 1.3593541006450458
+Train Accuracy: 0.5226982097186701
+Epoch Time: 1.0654051303863525
+Average time per iteration: 0.00136241065266797
+-------------------------------------------------
+Validation Loss: 1.3991095404716054
+Validation Accuracy: 0.5043789808917197
+Validation Time: 0.03299880027770996
+Average time per iteration: 0.0002101834412592991
+-------------------------------------------------
+Epoch: 3
+Train Loss: 1.268971358266328
+Train Accuracy: 0.5555067135549873
+Epoch Time: 1.00677490234375
+Average time per iteration: 0.001287435936500959
+-------------------------------------------------
+Validation Loss: 1.3853987721121235
+Validation Accuracy: 0.5134355095541401
+Validation Time: 0.032941579818725586
+Average time per iteration: 0.00020981897973710564
+-------------------------------------------------
+Epoch: 4
+Train Loss: 1.1964774349004106
+Train Accuracy: 0.5807824488491049
+Epoch Time: 1.0543010234832764
+Average time per iteration: 0.0013482110274722204
+-------------------------------------------------
+Validation Loss: 1.392445903674812
+Validation Accuracy: 0.513734076433121
+Validation Time: 0.03560018539428711
+Average time per iteration: 0.00022675277321201982
+-------------------------------------------------
+Epoch: 5
+Train Loss: 1.1333874617238788
+Train Accuracy: 0.6054187979539642
+Epoch Time: 1.1178410053253174
+Average time per iteration: 0.0014294642011832702
+-------------------------------------------------
+Validation Loss: 1.3516545367848343
+Validation Accuracy: 0.5270700636942676
+Validation Time: 0.030989885330200195
+Average time per iteration: 0.00019738780465095666
+-------------------------------------------------
+Epoch: 6
+Train Loss: 1.0789606837970216
+Train Accuracy: 0.626798273657289
+Epoch Time: 1.0498549938201904
+Average time per iteration: 0.0013425255675450006
+-------------------------------------------------
+Validation Loss: 1.3269356071569358
+Validation Accuracy: 0.5394108280254777
+Validation Time: 0.0330655574798584
+Average time per iteration: 0.00021060864636852483
+-------------------------------------------------
+Epoch: 7
+Train Loss: 1.0344892186124612
+Train Accuracy: 0.6437020460358056
+Epoch Time: 1.0368444919586182
+Average time per iteration: 0.001325888097133783
+-------------------------------------------------
+Validation Loss: 1.328524682552192
+Validation Accuracy: 0.536922770700637
+Validation Time: 0.035123348236083984
+Average time per iteration: 0.00022371559386040755
+-------------------------------------------------
+Epoch: 8
+Train Loss: 0.9988287643093587
+Train Accuracy: 0.6573489450127877
+Epoch Time: 1.0680630207061768
+Average time per iteration: 0.001365809489394088
+-------------------------------------------------
+Validation Loss: 1.3286759018138716
+Validation Accuracy: 0.5318471337579618
+Validation Time: 0.035320281982421875
+Average time per iteration: 0.00022496994893262342
+-------------------------------------------------
+Epoch: 9
+Train Loss: 0.9673835055145157
+Train Accuracy: 0.6691376278772379
+Epoch Time: 1.0579347610473633
+Average time per iteration: 0.001352857750699953
+-------------------------------------------------
+Validation Loss: 1.3156846078338138
+Validation Accuracy: 0.5394108280254777
+Validation Time: 0.035254716873168945
+Average time per iteration: 0.0002245523367717767
+-------------------------------------------------
+Model name: ----------- EfficientKAN --------------
+Dataset name: ----------- MNIST --------------
+Model name: ----------- MLP --------------
+Dataset name: ----------- CIFAR10 --------------
+Epoch: 0
+Train Loss: 1.6992371649388462
+Train Accuracy: 0.4033927429667519
+Epoch Time: 2.871708393096924
+Average time per iteration: 0.0036722613722467057
+-------------------------------------------------
+Validation Loss: 1.5652013872839083
+Validation Accuracy: 0.442078025477707
+Validation Time: 0.027020931243896484
+Average time per iteration: 0.000172107842317812
+-------------------------------------------------
+Epoch: 1
+Train Loss: 1.4661345746358643
+Train Accuracy: 0.48423513427109977
+Epoch Time: 1.0571205615997314
+Average time per iteration: 0.001351816574935718
+-------------------------------------------------
+Validation Loss: 1.4585241367862483
+Validation Accuracy: 0.48676353503184716
+Validation Time: 0.042060136795043945
+Average time per iteration: 0.0002678989604779869
+-------------------------------------------------
+Epoch: 2
+Train Loss: 1.360110946552223
+Train Accuracy: 0.5217790920716112
+Epoch Time: 1.0870029926300049
+Average time per iteration: 0.0013900294023401598
+-------------------------------------------------
+Validation Loss: 1.4096207504819154
+Validation Accuracy: 0.5038813694267515
+Validation Time: 0.03932642936706543
+Average time per iteration: 0.00025048681125519384
+-------------------------------------------------
+Epoch: 3
+Train Loss: 1.2719552943773587
+Train Accuracy: 0.5551670396419437
+Epoch Time: 1.0548803806304932
+Average time per iteration: 0.0013489518933893774
+-------------------------------------------------
+Validation Loss: 1.386702304433106
+Validation Accuracy: 0.5101512738853503
+Validation Time: 0.029116392135620117
+Average time per iteration: 0.0001854547269784721
+-------------------------------------------------
+Epoch: 4
+Train Loss: 1.2016112117663673
+Train Accuracy: 0.5791240409207161
+Epoch Time: 1.0641396045684814
+Average time per iteration: 0.0013607923332077767
+-------------------------------------------------
+Validation Loss: 1.3523985272759844
+Validation Accuracy: 0.5245820063694268
+Validation Time: 0.03516554832458496
+Average time per iteration: 0.00022398438423302524
+-------------------------------------------------
+Epoch: 5
+Train Loss: 1.1358317978241865
+Train Accuracy: 0.6019421355498721
+Epoch Time: 1.0988962650299072
+Average time per iteration: 0.001405238190575329
+-------------------------------------------------
+Validation Loss: 1.34161105277432
+Validation Accuracy: 0.5328423566878981
+Validation Time: 0.03697609901428223
+Average time per iteration: 0.00023551655423109698
+-------------------------------------------------
+Epoch: 6
+Train Loss: 1.087828941052527
+Train Accuracy: 0.620843989769821
+Epoch Time: 1.0960092544555664
+Average time per iteration: 0.0014015463611963765
+-------------------------------------------------
+Validation Loss: 1.3387203706297905
+Validation Accuracy: 0.533937101910828
+Validation Time: 0.030506134033203125
+Average time per iteration: 0.00019430658619874603
+-------------------------------------------------
+Epoch: 7
+Train Loss: 1.0395442977585756
+Train Accuracy: 0.6398857097186701
+Epoch Time: 1.1253986358642578
+Average time per iteration: 0.001439128690363501
+-------------------------------------------------
+Validation Loss: 1.3248164619609808
+Validation Accuracy: 0.5399084394904459
+Validation Time: 0.04289650917053223
+Average time per iteration: 0.0002732261730607148
+-------------------------------------------------
+Epoch: 8
+Train Loss: 1.0030306826162216
+Train Accuracy: 0.6526734335038363
+Epoch Time: 1.1101431846618652
+Average time per iteration: 0.001419620440744073
+-------------------------------------------------
+Validation Loss: 1.3329727289023672
+Validation Accuracy: 0.5386146496815286
+Validation Time: 0.035112619400024414
+Average time per iteration: 0.00022364725732499627
+-------------------------------------------------
+Epoch: 9
+Train Loss: 0.9697038484808734
+Train Accuracy: 0.665740888746803
+Epoch Time: 1.118269681930542
+Average time per iteration: 0.001430012380985348
+-------------------------------------------------
+Validation Loss: 1.3255189778698477
+Validation Accuracy: 0.5391122611464968
+Validation Time: 0.04305005073547363
+Average time per iteration: 0.000274204144811934
+-------------------------------------------------
+Model name: ----------- EfficientKAN --------------
+Dataset name: ----------- CIFAR10 --------------
+Epoch: 0
+Train Loss: 1.551013439055294
+Train Accuracy: 0.45038762787723785
+Epoch Time: 4.016979694366455
+Average time per iteration: 0.005136802678217973
+-------------------------------------------------
+Validation Loss: 1.4005045374487615
+Validation Accuracy: 0.49990047770700635
+Validation Time: 0.40265631675720215
+Average time per iteration: 0.0025646899156509693
+-------------------------------------------------
+Epoch: 1
+Train Loss: 1.2520179028248848
+Train Accuracy: 0.555926310741688
+Epoch Time: 3.9932751655578613
+Average time per iteration: 0.005106489981531792
+-------------------------------------------------
+Validation Loss: 1.3013081808758389
+Validation Accuracy: 0.535828025477707
+Validation Time: 0.41037535667419434
+Average time per iteration: 0.002613855774994868
+-------------------------------------------------
+Epoch: 2
+Train Loss: 1.0774478471035238
+Train Accuracy: 0.6205242966751918
+Epoch Time: 4.085444211959839
+Average time per iteration: 0.005224353212224858
+-------------------------------------------------
+Validation Loss: 1.251268110077852
+Validation Accuracy: 0.5588176751592356
+Validation Time: 0.4287230968475342
+Average time per iteration: 0.002730720362086205
+-------------------------------------------------
+Epoch: 3
+Train Loss: 0.9273155965768468
+Train Accuracy: 0.6777093989769821
+Epoch Time: 3.990070343017578
+Average time per iteration: 0.00510239174298923
+-------------------------------------------------
+Validation Loss: 1.2742631545492038
+Validation Accuracy: 0.5602109872611465
+Validation Time: 0.4148085117340088
+Average time per iteration: 0.0026420924314268074
+-------------------------------------------------
+Epoch: 4
+Train Loss: 0.7972148756694306
+Train Accuracy: 0.7258032289002557
+Epoch Time: 4.055558919906616
+Average time per iteration: 0.005186136726223294
+-------------------------------------------------
+Validation Loss: 1.259374974259905
+Validation Accuracy: 0.5699641719745223
+Validation Time: 0.4345362186431885
+Average time per iteration: 0.00276774661556171
+-------------------------------------------------
+Epoch: 5
+Train Loss: 0.6864200775961742
+Train Accuracy: 0.7695012787723785
+Epoch Time: 4.041052579879761
+Average time per iteration: 0.005167586419283582
+-------------------------------------------------
+Validation Loss: 1.2872931812978854
+Validation Accuracy: 0.5685708598726115
+Validation Time: 0.41508913040161133
+Average time per iteration: 0.002643879811475231
+-------------------------------------------------
+Epoch: 6
+Train Loss: 0.5950246014634667
+Train Accuracy: 0.8073849104859335
+Epoch Time: 3.7178542613983154
+Average time per iteration: 0.00475428933682649
+-------------------------------------------------
+Validation Loss: 1.2999941273859352
+Validation Accuracy: 0.5728503184713376
+Validation Time: 0.34699296951293945
+Average time per iteration: 0.0022101463026301875
+-------------------------------------------------
+Epoch: 7
+Train Loss: 0.5205204272285446
+Train Accuracy: 0.8379555626598465
+Epoch Time: 3.624751329421997
+Average time per iteration: 0.004635231879056262
+-------------------------------------------------
+Validation Loss: 1.3201582325491936
+Validation Accuracy: 0.5719546178343949
+Validation Time: 0.32735657691955566
+Average time per iteration: 0.002085073738341119
+-------------------------------------------------
+Epoch: 8
+Train Loss: 0.4606521598556462
+Train Accuracy: 0.8634111253196931
+Epoch Time: 3.6630845069885254
+Average time per iteration: 0.004684251287709112
+-------------------------------------------------
+Validation Loss: 1.3354480612050197
+Validation Accuracy: 0.5746417197452229
+Validation Time: 0.32627415657043457
+Average time per iteration: 0.0020781793412129592
+-------------------------------------------------
+Epoch: 9
+Train Loss: 0.41367995826637044
+Train Accuracy: 0.8829723465473146
+Epoch Time: 3.6390652656555176
+Average time per iteration: 0.004653536145339536
+-------------------------------------------------
+Validation Loss: 1.3589663509350673
+Validation Accuracy: 0.5693670382165605
+Validation Time: 0.3401648998260498
+Average time per iteration: 0.002166655412904776
+-------------------------------------------------
+Model name: ----------- FastKAN --------------
+Dataset name: ----------- CIFAR10 --------------
+Epoch: 0
+Train Loss: 1.797593408990699
+Train Accuracy: 0.40914721867007675
+Epoch Time: 1.932819128036499
+Average time per iteration: 0.002471635713601661
+-------------------------------------------------
+Validation Loss: 1.5136590960678782
+Validation Accuracy: 0.4723328025477707
+Validation Time: 0.10316896438598633
+Average time per iteration: 0.0006571271616941805
+-------------------------------------------------
+Epoch: 1
+Train Loss: 1.2692418093114253
+Train Accuracy: 0.5578844309462916
+Epoch Time: 1.9428057670593262
+Average time per iteration: 0.002484406351738269
+-------------------------------------------------
+Validation Loss: 1.430503363442269
+Validation Accuracy: 0.5033837579617835
+Validation Time: 0.1118631362915039
+Average time per iteration: 0.0007125040528121268
+-------------------------------------------------
+Epoch: 2
+Train Loss: 1.0011518600651674
+Train Accuracy: 0.6549312659846548
+Epoch Time: 1.9463329315185547
+Average time per iteration: 0.0024889167922232157
+-------------------------------------------------
+Validation Loss: 1.3889655345564436
+Validation Accuracy: 0.5211982484076433
+Validation Time: 0.09679341316223145
+Average time per iteration: 0.0006165185551734487
+-------------------------------------------------
+Epoch: 3
+Train Loss: 0.7258194045108908
+Train Accuracy: 0.7614889705882353
+Epoch Time: 2.0627212524414062
+Average time per iteration: 0.002637750962201287
+-------------------------------------------------
+Validation Loss: 1.4599793314174483
+Validation Accuracy: 0.5250796178343949
+Validation Time: 0.10679411888122559
+Average time per iteration: 0.0006802173177148127
+-------------------------------------------------
+Epoch: 4
+Train Loss: 0.45979049052957377
+Train Accuracy: 0.8662284207161125
+Epoch Time: 2.0014848709106445
+Average time per iteration: 0.002559443568939443
+-------------------------------------------------
+Validation Loss: 1.4644332767292192
+Validation Accuracy: 0.5298566878980892
+Validation Time: 0.11371779441833496
+Average time per iteration: 0.0007243171619002227
+-------------------------------------------------
+Epoch: 5
+Train Loss: 0.2450861191696218
+Train Accuracy: 0.9471906969309463
+Epoch Time: 1.913724660873413
+Average time per iteration: 0.002447218236411014
+-------------------------------------------------
+Validation Loss: 1.5381066146170257
+Validation Accuracy: 0.5421974522292994
+Validation Time: 0.09463191032409668
+Average time per iteration: 0.0006027510211725903
+-------------------------------------------------
+Epoch: 6
+Train Loss: 0.12068361657983659
+Train Accuracy: 0.9852141943734015
+Epoch Time: 1.9386465549468994
+Average time per iteration: 0.0024790876661725057
+-------------------------------------------------
+Validation Loss: 1.609901387220735
+Validation Accuracy: 0.5464769108280255
+Validation Time: 0.12260079383850098
+Average time per iteration: 0.0007808967760414075
+-------------------------------------------------
+Epoch: 7
+Train Loss: 0.06097820230171351
+Train Accuracy: 0.996843030690537
+Epoch Time: 1.9303226470947266
+Average time per iteration: 0.0024684432827298294
+-------------------------------------------------
+Validation Loss: 1.6827508416145471
+Validation Accuracy: 0.5454816878980892
+Validation Time: 0.10471200942993164
+Average time per iteration: 0.0006669554740759978
+-------------------------------------------------
+Epoch: 8
+Train Loss: 0.03483758594774072
+Train Accuracy: 0.9992207480818415
+Epoch Time: 1.943512201309204
+Average time per iteration: 0.0024853097203442506
+-------------------------------------------------
+Validation Loss: 1.7532196356232759
+Validation Accuracy: 0.5476711783439491
+Validation Time: 0.10893487930297852
+Average time per iteration: 0.0006938527344138759
+-------------------------------------------------
+Epoch: 9
+Train Loss: 0.022294140169563728
+Train Accuracy: 0.9997202685421995
+Epoch Time: 1.9976990222930908
+Average time per iteration: 0.00255460233029807
+-------------------------------------------------
+Validation Loss: 1.8014610049071584
+Validation Accuracy: 0.5450835987261147
+Validation Time: 0.07992148399353027
+Average time per iteration: 0.0005090540381753521
+-------------------------------------------------
+Model name: ----------- MLP --------------
+Dataset name: ----------- MNIST --------------
+Epoch: 0
+Train Loss: 0.34294171035210336
+Train Accuracy: 0.8973380863539445
+Epoch Time: 3.1234829425811768
+Average time per iteration: 0.0033299391711952846
+-------------------------------------------------
+Validation Loss: 0.19178494250188302
+Validation Accuracy: 0.9425756369426752
+Validation Time: 0.039133548736572266
+Average time per iteration: 0.00024925827220746667
+-------------------------------------------------
+Epoch: 1
+Train Loss: 0.15832440777103912
+Train Accuracy: 0.9539578891257996
+Epoch Time: 1.2191791534423828
+Average time per iteration: 0.0012997645559087237
+-------------------------------------------------
+Validation Loss: 0.13721250635972188
+Validation Accuracy: 0.9592953821656051
+Validation Time: 0.035999298095703125
+Average time per iteration: 0.00022929489232931927
+-------------------------------------------------
+Epoch: 2
+Train Loss: 0.11134459363566691
+Train Accuracy: 0.9662013592750534
+Epoch Time: 1.2118275165557861
+Average time per iteration: 0.0012919269899315418
+-------------------------------------------------
+Validation Loss: 0.11169943072948794
+Validation Accuracy: 0.9652667197452229
+Validation Time: 0.03511929512023926
+Average time per iteration: 0.00022368977783591884
+-------------------------------------------------
+Epoch: 3
+Train Loss: 0.08599233074929875
+Train Accuracy: 0.9745135927505331
+Epoch Time: 1.2120428085327148
+Average time per iteration: 0.001292156512295005
+-------------------------------------------------
+Validation Loss: 0.09243381345477014
+Validation Accuracy: 0.9722332802547771
+Validation Time: 0.03710532188415527
+Average time per iteration: 0.0002363396298353839
+-------------------------------------------------
+Epoch: 4
+Train Loss: 0.06760322685410051
+Train Accuracy: 0.9800606343283582
+Epoch Time: 1.2406232357025146
+Average time per iteration: 0.0013226260508555593
+-------------------------------------------------
+Validation Loss: 0.08319913758747992
+Validation Accuracy: 0.9755175159235668
+Validation Time: 0.03416109085083008
+Average time per iteration: 0.000217586565928854
+-------------------------------------------------
+Epoch: 5
+Train Loss: 0.0561201453140911
+Train Accuracy: 0.9833089019189766
+Epoch Time: 1.2712314128875732
+Average time per iteration: 0.001355257369816176
+-------------------------------------------------
+Validation Loss: 0.07432813462497263
+Validation Accuracy: 0.978702229299363
+Validation Time: 0.037969112396240234
+Average time per iteration: 0.0002418414802308295
+-------------------------------------------------
+Epoch: 6
+Train Loss: 0.04749313962689516
+Train Accuracy: 0.9860907515991472
+Epoch Time: 1.2119767665863037
+Average time per iteration: 0.0012920861051026692
+-------------------------------------------------
+Validation Loss: 0.07079418247957138
+Validation Accuracy: 0.9773089171974523
+Validation Time: 0.048961639404296875
+Average time per iteration: 0.00031185757582354696
+-------------------------------------------------
+Epoch: 7
+Train Loss: 0.041649151317425755
+Train Accuracy: 0.9877731876332623
+Epoch Time: 1.3319025039672852
+Average time per iteration: 0.0014199387035898562
+-------------------------------------------------
+Validation Loss: 0.0760569151607342
+Validation Accuracy: 0.9768113057324841
+Validation Time: 0.03689861297607422
+Average time per iteration: 0.00023502301258645998
+-------------------------------------------------
+Epoch: 8
+Train Loss: 0.035490576106472126
+Train Accuracy: 0.9897221481876333
+Epoch Time: 1.3410699367523193
+Average time per iteration: 0.0014297120860898927
+-------------------------------------------------
+Validation Loss: 0.0667510060864133
+Validation Accuracy: 0.979796974522293
+Validation Time: 0.025310754776000977
+Average time per iteration: 0.00016121499857325462
+-------------------------------------------------
+Epoch: 9
+Train Loss: 0.03207229089234143
+Train Accuracy: 0.9909881396588486
+Epoch Time: 1.3134143352508545
+Average time per iteration: 0.0014002285023996316
+-------------------------------------------------
+Validation Loss: 0.06885007555113815
+Validation Accuracy: 0.977906050955414
+Validation Time: 0.03280973434448242
+Average time per iteration: 0.00020897919964638485
+-------------------------------------------------
+Model name: ----------- EfficientKAN --------------
+Dataset name: ----------- MNIST --------------
+Epoch: 0
+Train Loss: 0.3266039727362933
+Train Accuracy: 0.904334355010661
+Epoch Time: 4.3552086353302
+Average time per iteration: 0.004643079568582303
+-------------------------------------------------
+Validation Loss: 0.18466017882867602
+Validation Accuracy: 0.9459593949044586
+Validation Time: 0.36336755752563477
+Average time per iteration: 0.002314443041564553
+-------------------------------------------------
+Epoch: 1
+Train Loss: 0.12485858263856948
+Train Accuracy: 0.9639359008528785
+Epoch Time: 4.360839366912842
+Average time per iteration: 0.0046490824807173155
+-------------------------------------------------
+Validation Loss: 0.10821254077518751
+Validation Accuracy: 0.9683519108280255
+Validation Time: 0.35745835304260254
+Average time per iteration: 0.0022768047964496978
+-------------------------------------------------
+Epoch: 2
+Train Loss: 0.0735900408870328
+Train Accuracy: 0.9794942697228145
+Epoch Time: 4.155646085739136
+Average time per iteration: 0.004430326317419121
+-------------------------------------------------
+Validation Loss: 0.09269862750264858
+Validation Accuracy: 0.9719347133757962
+Validation Time: 0.40431880950927734
+Average time per iteration: 0.0025752790414603653
+-------------------------------------------------
+Epoch: 3
+Train Loss: 0.04661828060093314
+Train Accuracy: 0.9871901652452025
+Epoch Time: 4.353841304779053
+Average time per iteration: 0.0046416218601056
+-------------------------------------------------
+Validation Loss: 0.07687953342817083
+Validation Accuracy: 0.9781050955414012
+Validation Time: 0.3645341396331787
+Average time per iteration: 0.002321873500848272
+-------------------------------------------------
+Epoch: 4
+Train Loss: 0.02921427766318872
+Train Accuracy: 0.9932369402985075
+Epoch Time: 4.422502756118774
+Average time per iteration: 0.004714821701619162
+-------------------------------------------------
+Validation Loss: 0.06759601225436941
+Validation Accuracy: 0.979796974522293
+Validation Time: 0.354017972946167
+Average time per iteration: 0.002254891547427815
+-------------------------------------------------
+Epoch: 5
+Train Loss: 0.018351605230657413
+Train Accuracy: 0.9966851012793176
+Epoch Time: 4.3725292682647705
+Average time per iteration: 0.00466154506211596
+-------------------------------------------------
+Validation Loss: 0.06542650628060097
+Validation Accuracy: 0.9799960191082803
+Validation Time: 0.36174798011779785
+Average time per iteration: 0.0023041272618968016
+-------------------------------------------------
+Epoch: 6
+Train Loss: 0.011494584113874757
+Train Accuracy: 0.9987673240938166
+Epoch Time: 4.389154672622681
+Average time per iteration: 0.004679269373798167
+-------------------------------------------------
+Validation Loss: 0.06328655185606509
+Validation Accuracy: 0.9806926751592356
+Validation Time: 0.4053018093109131
+Average time per iteration: 0.002581540186693714
+-------------------------------------------------
+Epoch: 7
+Train Loss: 0.007618931036891549
+Train Accuracy: 0.9996501865671642
+Epoch Time: 4.326081275939941
+Average time per iteration: 0.004612026946631068
+-------------------------------------------------
+Validation Loss: 0.0636937622938644
+Validation Accuracy: 0.9806926751592356
+Validation Time: 0.3427867889404297
+Average time per iteration: 0.002183355343569616
+-------------------------------------------------
+Epoch: 8
+Train Loss: 0.005262263001005815
+Train Accuracy: 0.9998001066098081
+Epoch Time: 4.387310743331909
+Average time per iteration: 0.004677303564319732
+-------------------------------------------------
+Validation Loss: 0.06297481415599954
+Validation Accuracy: 0.981687898089172
+Validation Time: 0.39124178886413574
+Average time per iteration: 0.002491985916332075
+-------------------------------------------------
+Epoch: 9
+Train Loss: 0.0038279423879624317
+Train Accuracy: 0.9999000533049041
+Epoch Time: 4.453461408615112
+Average time per iteration: 0.00474782666163658
+-------------------------------------------------
+Validation Loss: 0.06208176119994538
+Validation Accuracy: 0.9812898089171974
+Validation Time: 0.37282347679138184
+Average time per iteration: 0.0023746718266966995
+-------------------------------------------------
+Model name: ----------- FastKAN --------------
+Dataset name: ----------- MNIST --------------
+Epoch: 0
+Train Loss: 0.33148486048046716
+Train Accuracy: 0.8981043443496801
+Epoch Time: 2.4554412364959717
+Average time per iteration: 0.002617741190294213
+-------------------------------------------------
+Validation Loss: 0.16320154239619328
+Validation Accuracy: 0.9499402866242038
+Validation Time: 0.09836959838867188
+Average time per iteration: 0.000626557951520203
+-------------------------------------------------
+Epoch: 1
+Train Loss: 0.13039345655745185
+Train Accuracy: 0.9590718283582089
+Epoch Time: 2.4139339923858643
+Average time per iteration: 0.002573490396999855
+-------------------------------------------------
+Validation Loss: 0.18072598133307355
+Validation Accuracy: 0.9416799363057324
+Validation Time: 0.09320569038391113
+Average time per iteration: 0.0005936668177319181
+-------------------------------------------------
+Epoch: 2
+Train Loss: 0.07541960504587128
+Train Accuracy: 0.9762460021321961
+Epoch Time: 2.2502050399780273
+Average time per iteration: 0.00239893927502988
+-------------------------------------------------
+Validation Loss: 0.10856936274746665
+Validation Accuracy: 0.9670581210191083
+Validation Time: 0.10482597351074219
+Average time per iteration: 0.0006676813599410331
+-------------------------------------------------
+Epoch: 3
+Train Loss: 0.04643714207975166
+Train Accuracy: 0.9851412579957356
+Epoch Time: 2.262266159057617
+Average time per iteration: 0.002411797610935626
+-------------------------------------------------
+Validation Loss: 0.08646938928301375
+Validation Accuracy: 0.9722332802547771
+Validation Time: 0.09881186485290527
+Average time per iteration: 0.0006293749353688234
+-------------------------------------------------
+Epoch: 4
+Train Loss: 0.028694842436558395
+Train Accuracy: 0.9913379530916845
+Epoch Time: 2.2300539016723633
+Average time per iteration: 0.0023774561851517733
+-------------------------------------------------
+Validation Loss: 0.08948884736917094
+Validation Accuracy: 0.9712380573248408
+Validation Time: 0.09970831871032715
+Average time per iteration: 0.0006350848325498544
+-------------------------------------------------
+Epoch: 5
+Train Loss: 0.016187118679862906
+Train Accuracy: 0.9958188965884861
+Epoch Time: 2.2828056812286377
+Average time per iteration: 0.0024336947561072898
+-------------------------------------------------
+Validation Loss: 0.09077324541055769
+Validation Accuracy: 0.9728304140127388
+Validation Time: 0.10846233367919922
+Average time per iteration: 0.0006908428896764281
+-------------------------------------------------
+Epoch: 6
+Train Loss: 0.009153041560245035
+Train Accuracy: 0.998051039445629
+Epoch Time: 2.250406503677368
+Average time per iteration: 0.002399154055093143
+-------------------------------------------------
+Validation Loss: 0.07165813955014377
+Validation Accuracy: 0.9791998407643312
+Validation Time: 0.1090998649597168
+Average time per iteration: 0.0006949035984695338
+-------------------------------------------------
+Epoch: 7
+Train Loss: 0.005083203506740386
+Train Accuracy: 0.9992170842217484
+Epoch Time: 2.540776252746582
+Average time per iteration: 0.002708716687363094
+-------------------------------------------------
+Validation Loss: 0.07717415074424193
+Validation Accuracy: 0.9776074840764332
+Validation Time: 0.11595702171325684
+Average time per iteration: 0.0007385797561353938
+-------------------------------------------------
+Epoch: 8
+Train Loss: 0.0028714018785348807
+Train Accuracy: 0.9997667910447762
+Epoch Time: 2.3065402507781982
+Average time per iteration: 0.0024589981351579937
+-------------------------------------------------
+Validation Loss: 0.07986718728964308
+Validation Accuracy: 0.9770103503184714
+Validation Time: 0.11075282096862793
+Average time per iteration: 0.0007054319806918977
+-------------------------------------------------
+Epoch: 9
+Train Loss: 0.0017961251890430895
+Train Accuracy: 0.9999000533049041
+Epoch Time: 2.3309929370880127
+Average time per iteration: 0.0024850670971087556
+-------------------------------------------------
+Validation Loss: 0.06697300266631637
+Validation Accuracy: 0.9825835987261147
+Validation Time: 0.11713576316833496
+Average time per iteration: 0.0007460876634925793
+-------------------------------------------------
