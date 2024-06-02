@@ -190,7 +190,7 @@ class Trainer():
         
         
         if scheduler is not None:
-            scheduler.step(np.mean(loss_array))
+            scheduler.step()
         
         print(f'Validation Loss: {np.mean(loss_array)}')
         print(f'Validation Accuracy: {np.mean(accuracy_array)}')
