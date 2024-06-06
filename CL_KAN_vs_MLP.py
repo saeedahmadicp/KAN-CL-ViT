@@ -8,8 +8,9 @@ import torch
 
 from efficientkan import  KAN as efficientKAN
 from fastkan import FastKAN as fastKAN
+from kan import KAN as KANLayer
 
-from trainer import Trainer
+from continual_learning_trainer import ContinualLearningTrainer
 from utils import DivideDataset
 
 
@@ -27,7 +28,6 @@ class EfficientKAN(nn.Module):
         self.efficientKAN = efficientKAN([self.input_size, 256, num_classes])
 
     def forward(self, x):
-        print(x.shape)
         x = x.view(-1, self.input_size)
         x = self.efficientKAN(x)
         return x
@@ -71,6 +71,22 @@ class FastKAN(nn.Module):
         return x
 
 
+# class KAN_original(nn.Module):
+#     def __init__(self,  num_classes, dataset_name):
+#         super(FastKAN, self).__init__()
+#         if dataset_name == 'CIFAR10':
+#             self.input_size = 3072
+#         elif dataset_name == 'MNIST':
+#             self.input_size = 784
+            
+#         self.fastKAN = fastKAN([self.input_size, 256, num_classes])
+        
+#     def forward(self, x):
+#         x = x.view(-1, self.input_size)
+#         x = self.fastKAN(x)
+#         return x
+
+
 if __name__ == '__main__':
     ## device
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -109,8 +125,11 @@ if __name__ == '__main__':
     train_MNIST_task_divider = DivideDataset(train_dataset_MNIST, 5, list(range(10)))
     train_MNIST_task_datasets, tasks_classes = train_MNIST_task_divider.get_the_datasets()
     
+    
+    num_of_task = 5
+    
     train_task_dataset_loader = {}
-    for task in range(5):
+    for task in range(num_of_task):
         train_task_dataset_loader[task] = DataLoader(train_MNIST_task_datasets[task], batch_size=batch_size, shuffle=True)
         
         
@@ -118,7 +137,7 @@ if __name__ == '__main__':
     test_MNIST_task_datasets, tasks_classes = test_MNIST_task_divider.get_the_datasets()
     
     test_task_dataset_loader = {}
-    for task in range(5):
+    for task in range(num_of_task):
         test_task_dataset_loader[task] = DataLoader(test_MNIST_task_datasets[task], batch_size=batch_size, shuffle=False)
         
     
@@ -160,11 +179,9 @@ if __name__ == '__main__':
     schedular_FastKAN_2 = optim.lr_scheduler.ExponentialLR(FastKAN_optimizer_2, gamma=0.8)
 
     
-    file_path = 'saved_models\\KAN_vs_MLP.txt'
-    
     if isMNIST:
-        models = [ MLP_model_2, EfficientKAN_model_2, FastKAN_model_2]
-        model_names = ['MLP', 'EfficientKAN', 'FastKAN']
+        models = [ MLP_model_2, EfficientKAN_model_2]
+        model_names = ['MLP', 'EfficientKAN']
         dataset_name = ['MNIST']
         train_dataset_loader = [train_task_dataset_loader]
         test_dataset_loader = [test_task_dataset_loader]
@@ -180,7 +197,19 @@ if __name__ == '__main__':
         schedulars = [schedular_MLP_1, schedular_EfficientKAN_1, schedular_FastKAN_1]
     
     
-    epochs = 10
+
+    epoch_ditribution = {}
+    for task in range(num_of_task):
+        if task == 0:
+            epoch_ditribution[task] = 7
+        else:
+            epoch_ditribution[task] = 5 
+    
+    
+    
+    file_path = 'saved_models\\CL_KAN_vs_MLP.txt'
+    file_path_cl_tasks = 'saved_models\\CL_KAN_vs_MLP_tasks.txt'
+    
     
     args_dict = {}
     args_dict['num_models'] = len(models)
@@ -192,10 +221,12 @@ if __name__ == '__main__':
     
     
     args_dict['record_save_path'] = file_path
-    args_dict['epochs'] = epochs
+    args_dict['record_save_path_cl_tasks'] = file_path_cl_tasks
+    args_dict['epoch_distribution'] = epoch_ditribution
     args_dict['device'] = device
     args_dict['loss_function'] = criterion
     args_dict['weights_save_path'] = 'saved_models'
+    args_dict['num_tasks'] = num_of_task
     
     for m in range(args_dict['num_models']):
         args_dict[('model', m)] = models[m]
@@ -204,9 +235,8 @@ if __name__ == '__main__':
         args_dict[('schedulers', m)] = schedulars[m]
         
         
-        
-    trainer = Trainer(args_dict)
-    trainer.train_models()
+    cl_trainer = ContinualLearningTrainer(args_dict)
+    cl_trainer.train_models()
     
     
   

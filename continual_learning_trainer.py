@@ -15,15 +15,26 @@ class ContinualLearningTrainer():
         self.timer = Timer()
         self.num_tasks = args_dict['num_tasks']
         self.current_task = 0
-        self.average_incremental_accuracy = []
+        self.average_accuracy_after_task = []
         self.each_task_accuracy = []
+        self.global_forget_accuracy = []
+        self.last_accuracy = 0
         
+        
+    
+    def reset(self):
+        self.average_accuracy_after_task = []
+        self.each_task_accuracy = []
+        self.global_forget_accuracy = []
+        self.last_accuracy = 0
         
     def average_classification_accuracy(self, model, test_loader):
-        average_accuracy = 0
+        
         tasks_accuracies = []
         
         for task_index in range(self.current_task + 1):
+            average_accuracy = 0
+            
             for data in test_loader[task_index]:
                 inputs, labels = data
                 inputs = inputs.to(self.args_dict['device'])
@@ -42,14 +53,25 @@ class ContinualLearningTrainer():
         
         return average_accuracy
     
-    def average_global_forgetting(self):
-        global_forgetting = []
+    def average_global_forgetting(self, model, test_loader):
+        previous_task_accuracy = 0
         
-        for task in range(1, self.num_tasks):
-            forget_accuracy = self.each_task_accuracy[task-1] - self.each_task_accuracy[task]
-            global_forgetting.append(forget_accuracy)
+        for data in test_loader[self.current_task -1]:
+            inputs, labels = data
+            inputs = inputs.to(self.args_dict['device'])
+            labels = labels.to(self.args_dict['device'])
             
-        return np.mean(global_forgetting)
+            model.eval()
+            with torch.no_grad():
+                outputs = model(inputs)
+            
+            metrics = self.calc_metrics(outputs, labels)
+            previous_task_accuracy += metrics.item()
+            
+        previous_task_accuracy = previous_task_accuracy/len(test_loader[self.current_task - 1])
+        
+        forget_accuracy = self.each_task_accuracy[self.current_task] - previous_task_accuracy
+        return forget_accuracy
     
     
 
@@ -59,8 +81,8 @@ class ContinualLearningTrainer():
         
         return correct/target.size(0)
         
-    def save_model(self, model_name, dataset_name, epoch, model):
-        folder_name = 'weights-' + str(model_name) + '-' + str(dataset_name)
+    def save_model(self, model_name, dataset_name, epoch, model, task_index):
+        folder_name = 'weights-' + str(model_name) + '-' + str(dataset_name) + '-Task-' + str(task_index)
         save_dir = os.path.join(self.args_dict['weights_save_path'], folder_name)
         
         if os.path.isdir(save_dir) == False:
@@ -69,8 +91,8 @@ class ContinualLearningTrainer():
         save_name = 'Epoch-' + str(epoch) + '.pth'
         torch.save(model.state_dict(), os.path.join(save_dir, save_name))
     
-    def load_model(self, model_name, dataset_name, epoch, model):
-        folder_name = 'weights-' + str(model_name) + '-' + str(dataset_name)
+    def load_model(self, model_name, dataset_name, epoch, model, task_index):
+        folder_name = 'weights-' + str(model_name) + '-' + str(dataset_name) + '-Task-' + str(task_index)
         save_dir = os.path.join(self.args_dict['weights_save_path'], folder_name)
         
         load_name = 'Epoch-' + str(epoch) + '.pth'
@@ -97,7 +119,7 @@ class ContinualLearningTrainer():
         file_path = self.args_dict['record_save_path']
         
         model.train()
-        for batch_idx, (data, target) in enumerate(train_loader[self.current_task]):
+        for batch_idx, (data, target) in enumerate(train_loader):
             data, target = data.to(device), target.to(device)
             
             timer.start()
@@ -115,10 +137,12 @@ class ContinualLearningTrainer():
             
             
             if batch_idx % 10 == 0:
-                print(f'Train Epoch: {epoch} [{batch_idx * len(data)}/{len(train_loader[self.current_task].dataset)} ({100. * batch_idx / len(train_loader[self.current_task]):.0f}%)]\tLoss: {loss.item():.6f}')
+                print(f'Train Epoch: {epoch} [{batch_idx * len(data)}/{len(train_loader.dataset)} ({100. * batch_idx / len(train_loader):.0f}%)]\tLoss: {loss.item():.6f}')
                 
         print(f'Train Epoch: {epoch} Loss: {np.mean(loss_array)} Accuracy: {np.mean(accuracy_array)}')
         with open(file_path, 'a') as f:
+            f.write(f'Task Index: {str(self.current_task)}')
+            f.write('\n')
             f.write(f'Epoch: {epoch}')
             f.write('\n')
             f.write(f'Train Loss: {np.mean(loss_array)}')
@@ -153,22 +177,97 @@ class ContinualLearningTrainer():
             
             print(f'Model name: ----------- {model_name} --------------')
             
-            train_losses = []
-            train_accuracies = []
-            test_losses = []
-            test_accuracies = []
-            
-            for epoch in range(self.args_dict['epochs']):
-                train_loss, train_accuracy = self.train(model=model, train_loader=self.args_dict[('trainloader', dataset_index)], optimizer=optimizer, epoch=epoch)
-                test_loss, test_accuracy = self.evaluate(model, self.args_dict[('testloader', dataset_index)], scheduler)
-                self.save_model(model_name, dataset_name, epoch, model)
+            with open(self.args_dict['record_save_path_cl_tasks'], 'a') as f:
+                f.write(f'Model name: ----------- {model_name} --------------')
+                f.write('\n')
+                f.write(f'Dataset name: ----------- {dataset_name} --------------\n')
                 
-                train_accuracies.append(train_accuracy)
-                train_losses.append(train_loss)
-                test_accuracies.append(test_accuracy)
-                test_losses.append(test_loss)
+         
+            self.reset()
             
-            self.plot_results(train_losses, train_accuracies, test_losses, test_accuracies, model_name, dataset_name)
+            for task_index in range(self.num_tasks):
+                
+                
+                
+                self.current_task = task_index
+                
+                train_losses = []
+                train_accuracies = []
+                test_losses = []
+                test_accuracies = []
+                
+                ## load the particular task dataset loader for the train and test data
+                train_loader = self.args_dict[('trainloader', dataset_index)][task_index]
+                test_loader = self.args_dict[('testloader', dataset_index)][task_index]
+                
+                print(f'Task Index: {task_index}')
+                
+                for epoch in range(self.args_dict['epoch_distribution'][task_index]):
+                    
+                    train_loss, train_accuracy = self.train(model=model, train_loader=train_loader, optimizer=optimizer, epoch=epoch)
+                    test_loss, test_accuracy = self.evaluate(model=model, test_loader=test_loader, scheduler=scheduler)
+                    
+                    self.save_model(model_name, dataset_name, epoch, model, task_index)
+                    
+                    train_accuracies.append(train_accuracy)
+                    train_losses.append(train_loss)
+                    test_accuracies.append(test_accuracy)
+                    test_losses.append(test_loss)
+                    
+                each_task_accuracy = max(test_accuracies)
+                self.each_task_accuracy.append(each_task_accuracy)
+                
+                incremental_accuracy = self.average_classification_accuracy(model=model, test_loader=self.args_dict[('testloader', dataset_index)])
+                self.average_accuracy_after_task.append(incremental_accuracy)
+                
+                
+                if task_index != 0:
+                    forget_accuracy = self.average_global_forgetting(model=model, test_loader=self.args_dict[('testloader', dataset_index)])
+                    self.global_forget_accuracy.append(forget_accuracy)
+               
+               
+                # # ## change the learning rate 
+                # # current_lr = optimizer.param_groups[0]['lr']
+                # # new_lr = current_lr / (1*np.exp(-(task_index-2)) )
+                
+                # for param_group in optimizer.param_groups:
+                #     param_group['lr'] = new_lr
+                
+                with open(self.args_dict['record_save_path_cl_tasks'], 'a') as f:
+                    f.write("--------------------Task----------------------\n")
+                    f.write("Task Index: " + str(task_index))
+                    f.write('\n')
+                    f.write(f'Incremental Accuracy after task {task_index}: {incremental_accuracy}')
+                    f.write('\n')
+                    f.write(f'Each Task Accuracy: {each_task_accuracy}')
+                    f.write('\n')
+                    if task_index != 0:
+                        f.write("Forget Accuracy: " + str(forget_accuracy))
+                        f.write('\n')
+               
+   
+            
+            global_forget_accuracy = np.mean(self.global_forget_accuracy)
+            last_accuracy = self.average_accuracy_after_task[-1]
+            average_incremental_accuracy = np.mean(self.average_accuracy_after_task)
+            
+            
+            with open(self.args_dict['record_save_path_cl_tasks'], 'a') as f:
+                f.write("Avreage Global Forgetting Accuracy: " + str(global_forget_accuracy))
+                f.write('\n')
+                f.write("Last Task Accuracy: " + str(last_accuracy))
+                f.write('\n')
+                f.write("Average Incremental Accuracy: " + str(average_incremental_accuracy))
+                f.write('\n')
+                f.write("-------------------------------------------------\n")
+                f.write('\n')
+                
+        
+                
+                
+            
+          
+            # self.plot_results(train_losses, train_accuracies, test_losses, test_accuracies, model_name, dataset_name)
                 
     
     def plot_results(self, train_losses, train_accuracies, test_losses, test_accuracies, model_name, dataset_name):
@@ -207,7 +306,7 @@ class ContinualLearningTrainer():
         eval_time = []
         
         model.eval()
-        for data in test_loader[self.current_task]:
+        for data in test_loader:
             inputs, labels = data
             inputs = inputs.to(self.args_dict['device'])
             labels = labels.to(self.args_dict['device'])
@@ -237,6 +336,7 @@ class ContinualLearningTrainer():
         print(f'Validation Time: {np.sum(eval_time)}')
             
         with open(self.args_dict['record_save_path'], 'a') as f:
+            f.write("Task Index: " + str(self.current_task))
             f.write(f'Validation Loss: {np.mean(loss_array)}')
             f.write('\n')
             f.write(f'Validation Accuracy: {np.mean(accuracy_array)}')

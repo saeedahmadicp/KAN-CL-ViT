@@ -1,0 +1,652 @@
+Model name: ----------- MLP --------------
+Dataset name: ----------- MNIST --------------
+Task Index: 0
+Epoch: 0
+Train Loss: 0.14141876838497214
+Train Accuracy: 0.9456132270194388
+Epoch Time: 2.1009562015533447
+Average time per iteration: 0.011356520008396457
+-------------------------------------------------
+Task Index: 0Validation Loss: 0.08294057293824153
+Validation Accuracy: 0.9668412655591965
+Validation Time: 0.0060024261474609375
+Average time per iteration: 0.0001875758171081543
+-------------------------------------------------
+Task Index: 0
+Epoch: 1
+Train Loss: 0.0728200241520598
+Train Accuracy: 0.975
+Epoch Time: 0.17796587944030762
+Average time per iteration: 0.0009619777267043654
+-------------------------------------------------
+Task Index: 0Validation Loss: 0.0415874552418245
+Validation Accuracy: 0.98779296875
+Validation Time: 0.0019998550415039062
+Average time per iteration: 6.249547004699707e-05
+-------------------------------------------------
+Task Index: 0
+Epoch: 2
+Train Loss: 0.0513815572950989
+Train Accuracy: 0.9830236486486487
+Epoch Time: 0.18332314491271973
+Average time per iteration: 0.0009909359184471337
+-------------------------------------------------
+Task Index: 0Validation Loss: 0.04971740373730427
+Validation Accuracy: 0.9829545468091965
+Validation Time: 0.002964019775390625
+Average time per iteration: 9.262561798095703e-05
+-------------------------------------------------
+Task Index: 0
+Epoch: 3
+Train Loss: 0.039549149357638244
+Train Accuracy: 0.9869932432432432
+Epoch Time: 0.1814711093902588
+Average time per iteration: 0.0009809249156230205
+-------------------------------------------------
+Task Index: 0Validation Loss: 0.02631980618025409
+Validation Accuracy: 0.99365234375
+Validation Time: 0.00299835205078125
+Average time per iteration: 9.369850158691406e-05
+-------------------------------------------------
+Task Index: 0
+Epoch: 4
+Train Loss: 0.02956081861252519
+Train Accuracy: 0.9913006756756757
+Epoch Time: 0.18781566619873047
+Average time per iteration: 0.001015219817290435
+-------------------------------------------------
+Task Index: 0Validation Loss: 0.024942532391833083
+Validation Accuracy: 0.9921875
+Validation Time: 0.004999399185180664
+Average time per iteration: 0.00015623122453689575
+-------------------------------------------------
+Task Index: 0
+Epoch: 5
+Train Loss: 0.026033128431142385
+Train Accuracy: 0.9913006756756757
+Epoch Time: 0.18033981323242188
+Average time per iteration: 0.0009748098012563345
+-------------------------------------------------
+Task Index: 0Validation Loss: 0.023752388032335148
+Validation Accuracy: 0.99267578125
+Validation Time: 0.003000497817993164
+Average time per iteration: 9.376555681228638e-05
+-------------------------------------------------
+Task Index: 0
+Epoch: 6
+Train Loss: 0.02383454184714906
+Train Accuracy: 0.9920608108108108
+Epoch Time: 0.23697257041931152
+Average time per iteration: 0.0012809328130773596
+-------------------------------------------------
+Task Index: 0Validation Loss: 0.024163382601273042
+Validation Accuracy: 0.99365234375
+Validation Time: 0.0
+Average time per iteration: 0.0
+-------------------------------------------------
+Task Index: 1
+Epoch: 0
+Train Loss: 0.22906836951186946
+Train Accuracy: 0.9670843908629442
+Epoch Time: 0.20806670188903809
+Average time per iteration: 0.0010561761517210056
+-------------------------------------------------
+Task Index: 1Validation Loss: 0.009556187642053427
+Validation Accuracy: 0.9963235294117647
+Validation Time: 0.004997968673706055
+Average time per iteration: 0.00014699907863841336
+-------------------------------------------------
+Task Index: 1
+Epoch: 1
+Train Loss: 0.015027541239677367
+Train Accuracy: 0.9953204314720813
+Epoch Time: 0.23900723457336426
+Average time per iteration: 0.0012132346932658084
+-------------------------------------------------
+Task Index: 1Validation Loss: 0.005871549704940715
+Validation Accuracy: 0.9990808823529411
+Validation Time: 0.004999637603759766
+Average time per iteration: 0.0001470481648164637
+-------------------------------------------------
+Task Index: 1
+Epoch: 2
+Train Loss: 0.013737101126450402
+Train Accuracy: 0.9955901016438673
+Epoch Time: 0.2125988006591797
+Average time per iteration: 0.0010791817292344146
+-------------------------------------------------
+Task Index: 1Validation Loss: 0.004475101060747607
+Validation Accuracy: 0.9995404411764706
+Validation Time: 0.0030908584594726562
+Average time per iteration: 9.090760174919578e-05
+-------------------------------------------------
+Task Index: 1
+Epoch: 3
+Train Loss: 0.012326347318106818
+Train Accuracy: 0.9959866752479282
+Epoch Time: 0.19754409790039062
+Average time per iteration: 0.0010027619182760945
+-------------------------------------------------
+Task Index: 1Validation Loss: 0.0042423201456960455
+Validation Accuracy: 0.9995404411764706
+Validation Time: 0.0042226314544677734
+Average time per iteration: 0.00012419504277846392
+-------------------------------------------------
+Task Index: 1
+Epoch: 4
+Train Loss: 0.011770253043992889
+Train Accuracy: 0.9963515228426396
+Epoch Time: 0.21144580841064453
+Average time per iteration: 0.0010733289767037794
+-------------------------------------------------
+Task Index: 1Validation Loss: 0.0044360139967038244
+Validation Accuracy: 0.9995404411764706
+Validation Time: 0.008009672164916992
+Average time per iteration: 0.0002355785930857939
+-------------------------------------------------
+Task Index: 2
+Epoch: 0
+Train Loss: 1.5309662272044446
+Train Accuracy: 0.8495351792721266
+Epoch Time: 0.199448823928833
+Average time per iteration: 0.0011204990108361404
+-------------------------------------------------
+Task Index: 2Validation Loss: 0.10128249917179347
+Validation Accuracy: 0.972476851940155
+Validation Time: 0.0009961128234863281
+Average time per iteration: 3.320376078287761e-05
+-------------------------------------------------
+Task Index: 2
+Epoch: 1
+Train Loss: 0.09247436493718891
+Train Accuracy: 0.9773943286933257
+Epoch Time: 0.1858501434326172
+Average time per iteration: 0.0010441019293967258
+-------------------------------------------------
+Task Index: 2Validation Loss: 0.0795180960247914
+Validation Accuracy: 0.9808101852734884
+Validation Time: 0.0030019283294677734
+Average time per iteration: 0.00010006427764892578
+-------------------------------------------------
+Task Index: 2
+Epoch: 2
+Train Loss: 0.07660367625524823
+Train Accuracy: 0.9800695559281981
+Epoch Time: 0.18476486206054688
+Average time per iteration: 0.0010380048430367803
+-------------------------------------------------
+Task Index: 2Validation Loss: 0.0713367591612041
+Validation Accuracy: 0.981851851940155
+Validation Time: 0.003029346466064453
+Average time per iteration: 0.00010097821553548178
+-------------------------------------------------
+Task Index: 2
+Epoch: 3
+Train Loss: 0.06902769370151035
+Train Accuracy: 0.9816955927382695
+Epoch Time: 0.17172598838806152
+Average time per iteration: 0.0009647527437531546
+-------------------------------------------------
+Task Index: 2Validation Loss: 0.06724394353417058
+Validation Accuracy: 0.981851851940155
+Validation Time: 0.002193450927734375
+Average time per iteration: 7.311503092447917e-05
+-------------------------------------------------
+Task Index: 2
+Epoch: 4
+Train Loss: 0.06428014933853672
+Train Accuracy: 0.982046716333775
+Epoch Time: 0.17711424827575684
+Average time per iteration: 0.000995023866717735
+-------------------------------------------------
+Task Index: 2Validation Loss: 0.06382944798097015
+Validation Accuracy: 0.981851851940155
+Validation Time: 0.0040285587310791016
+Average time per iteration: 0.00013428529103597006
+-------------------------------------------------
+Task Index: 3
+Epoch: 0
+Train Loss: 1.6924089574454966
+Train Accuracy: 0.7781413612565445
+Epoch Time: 0.1906898021697998
+Average time per iteration: 0.0009983759275905748
+-------------------------------------------------
+Task Index: 3Validation Loss: 0.09132834058254957
+Validation Accuracy: 0.98876953125
+Validation Time: 0.0040683746337890625
+Average time per iteration: 0.0001271367073059082
+-------------------------------------------------
+Task Index: 3
+Epoch: 1
+Train Loss: 0.07518131523856318
+Train Accuracy: 0.9928010471204188
+Epoch Time: 0.19358277320861816
+Average time per iteration: 0.0010135223728199904
+-------------------------------------------------
+Task Index: 3Validation Loss: 0.06074923030973878
+Validation Accuracy: 0.9892578125
+Validation Time: 0.003997325897216797
+Average time per iteration: 0.0001249164342880249
+-------------------------------------------------
+Task Index: 3
+Epoch: 2
+Train Loss: 0.05359013561959042
+Train Accuracy: 0.9947643979057592
+Epoch Time: 0.1945509910583496
+Average time per iteration: 0.0010185915762217256
+-------------------------------------------------
+Task Index: 3Validation Loss: 0.04953715085866861
+Validation Accuracy: 0.98876953125
+Validation Time: 0.0029990673065185547
+Average time per iteration: 9.372085332870483e-05
+-------------------------------------------------
+Task Index: 3
+Epoch: 3
+Train Loss: 0.044023028804057555
+Train Accuracy: 0.9956002447617616
+Epoch Time: 0.19325017929077148
+Average time per iteration: 0.0010117810434071806
+-------------------------------------------------
+Task Index: 3Validation Loss: 0.04355381779168965
+Validation Accuracy: 0.9892578125
+Validation Time: 0.003974199295043945
+Average time per iteration: 0.0001241937279701233
+-------------------------------------------------
+Task Index: 3
+Epoch: 4
+Train Loss: 0.038343712424186514
+Train Accuracy: 0.9959914921465969
+Epoch Time: 0.1877429485321045
+Average time per iteration: 0.000982947374513636
+-------------------------------------------------
+Task Index: 3Validation Loss: 0.03988344248136855
+Validation Accuracy: 0.9892578125
+Validation Time: 0.002000570297241211
+Average time per iteration: 6.251782178878784e-05
+-------------------------------------------------
+Task Index: 4
+Epoch: 0
+Train Loss: 4.317062807461572
+Train Accuracy: 0.19753336969506805
+Epoch Time: 0.18197965621948242
+Average time per iteration: 0.0009628553239126054
+-------------------------------------------------
+Task Index: 4Validation Loss: 0.7306930795311928
+Validation Accuracy: 0.78662109375
+Validation Time: 0.005485057830810547
+Average time per iteration: 0.0001714080572128296
+-------------------------------------------------
+Task Index: 4
+Epoch: 1
+Train Loss: 0.484591268042408
+Train Accuracy: 0.8767436269729857
+Epoch Time: 0.19697284698486328
+Average time per iteration: 0.0010421843755812872
+-------------------------------------------------
+Task Index: 4Validation Loss: 0.33697387110441923
+Validation Accuracy: 0.91650390625
+Validation Time: 0.0050241947174072266
+Average time per iteration: 0.00015700608491897583
+-------------------------------------------------
+Task Index: 4
+Epoch: 2
+Train Loss: 0.2987233103110046
+Train Accuracy: 0.9290749761793349
+Epoch Time: 0.1921849250793457
+Average time per iteration: 0.0010168514554462736
+-------------------------------------------------
+Task Index: 4Validation Loss: 0.24976613745093346
+Validation Accuracy: 0.94287109375
+Validation Time: 0.0029993057250976562
+Average time per iteration: 9.372830390930176e-05
+-------------------------------------------------
+Task Index: 4
+Epoch: 3
+Train Loss: 0.24138575516365193
+Train Accuracy: 0.9428887086570579
+Epoch Time: 0.1937716007232666
+Average time per iteration: 0.0010252465646733682
+-------------------------------------------------
+Task Index: 4Validation Loss: 0.21110315481200814
+Validation Accuracy: 0.95361328125
+Validation Time: 0.004992961883544922
+Average time per iteration: 0.0001560300588607788
+-------------------------------------------------
+Task Index: 4
+Epoch: 4
+Train Loss: 0.21186596848977307
+Train Accuracy: 0.9490815899359486
+Epoch Time: 0.1903543472290039
+Average time per iteration: 0.001007165858354518
+-------------------------------------------------
+Task Index: 4Validation Loss: 0.1880248300731182
+Validation Accuracy: 0.9619140625
+Validation Time: 0.003996133804321289
+Average time per iteration: 0.00012487918138504028
+-------------------------------------------------
+Model name: ----------- EfficientKAN --------------
+Dataset name: ----------- MNIST --------------
+Task Index: 0
+Epoch: 0
+Train Loss: 0.16019609800565082
+Train Accuracy: 0.9521166053978173
+Epoch Time: 0.675560474395752
+Average time per iteration: 0.0036516782399770376
+-------------------------------------------------
+Task Index: 0Validation Loss: 0.06848965172866883
+Validation Accuracy: 0.97314453125
+Validation Time: 0.0520625114440918
+Average time per iteration: 0.0016269534826278687
+-------------------------------------------------
+Task Index: 0
+Epoch: 1
+Train Loss: 0.06635411630283941
+Train Accuracy: 0.9782094594594595
+Epoch Time: 0.6770477294921875
+Average time per iteration: 0.003659717456714527
+-------------------------------------------------
+Task Index: 0Validation Loss: 0.04066716651323077
+Validation Accuracy: 0.986328125
+Validation Time: 0.05499839782714844
+Average time per iteration: 0.0017186999320983887
+-------------------------------------------------
+Task Index: 0
+Epoch: 2
+Train Loss: 0.03722137101623859
+Train Accuracy: 0.9877533783783784
+Epoch Time: 0.6795017719268799
+Average time per iteration: 0.0036729825509561075
+-------------------------------------------------
+Task Index: 0Validation Loss: 0.03305464757795562
+Validation Accuracy: 0.98828125
+Validation Time: 0.055052995681762695
+Average time per iteration: 0.0017204061150550842
+-------------------------------------------------
+Task Index: 0
+Epoch: 3
+Train Loss: 0.02359370872995036
+Train Accuracy: 0.9924831081081081
+Epoch Time: 0.682727575302124
+Average time per iteration: 0.003690419325957427
+-------------------------------------------------
+Task Index: 0Validation Loss: 0.022414990065499296
+Validation Accuracy: 0.99267578125
+Validation Time: 0.05205798149108887
+Average time per iteration: 0.001626811921596527
+-------------------------------------------------
+Task Index: 0
+Epoch: 4
+Train Loss: 0.01616593749212051
+Train Accuracy: 0.9953547297297297
+Epoch Time: 0.6718652248382568
+Average time per iteration: 0.0036317039180446316
+-------------------------------------------------
+Task Index: 0Validation Loss: 0.022357402859142894
+Validation Accuracy: 0.9931640625
+Validation Time: 0.05603218078613281
+Average time per iteration: 0.0017510056495666504
+-------------------------------------------------
+Task Index: 0
+Epoch: 5
+Train Loss: 0.012361079192015569
+Train Accuracy: 0.996706081081081
+Epoch Time: 0.7111036777496338
+Average time per iteration: 0.003843803663511534
+-------------------------------------------------
+Task Index: 0Validation Loss: 0.02154228759218313
+Validation Accuracy: 0.9921875
+Validation Time: 0.051106929779052734
+Average time per iteration: 0.001597091555595398
+-------------------------------------------------
+Task Index: 0
+Epoch: 6
+Train Loss: 0.009122742728229511
+Train Accuracy: 0.9980574324324324
+Epoch Time: 0.7089998722076416
+Average time per iteration: 0.0038324317416629275
+-------------------------------------------------
+Task Index: 0Validation Loss: 0.019790497436474652
+Validation Accuracy: 0.99267578125
+Validation Time: 0.04985308647155762
+Average time per iteration: 0.0015579089522361755
+-------------------------------------------------
+Task Index: 1
+Epoch: 0
+Train Loss: 0.36741359820494873
+Train Accuracy: 0.9462563452986896
+Epoch Time: 0.7347567081451416
+Average time per iteration: 0.003729729482970262
+-------------------------------------------------
+Task Index: 1Validation Loss: 0.011700611992958276
+Validation Accuracy: 0.9981617647058824
+Validation Time: 0.0540311336517334
+Average time per iteration: 0.0015891509897568647
+-------------------------------------------------
+Task Index: 1
+Epoch: 1
+Train Loss: 0.01749084992830637
+Train Accuracy: 0.9950031725888325
+Epoch Time: 0.7343602180480957
+Average time per iteration: 0.0037277168428837344
+-------------------------------------------------
+Task Index: 1Validation Loss: 0.007352835627149462
+Validation Accuracy: 0.9986213235294118
+Validation Time: 0.057001352310180664
+Average time per iteration: 0.0016765103620641371
+-------------------------------------------------
+Task Index: 1
+Epoch: 2
+Train Loss: 0.014752187221287395
+Train Accuracy: 0.9956376903553299
+Epoch Time: 0.7195713520050049
+Average time per iteration: 0.0036526464568781974
+-------------------------------------------------
+Task Index: 1Validation Loss: 0.005774507121018627
+Validation Accuracy: 0.9990808823529411
+Validation Time: 0.05494976043701172
+Average time per iteration: 0.0016161694246179918
+-------------------------------------------------
+Task Index: 1
+Epoch: 3
+Train Loss: 0.013338652026643362
+Train Accuracy: 0.996113578680203
+Epoch Time: 0.7276082038879395
+Average time per iteration: 0.003693442659329642
+-------------------------------------------------
+Task Index: 1Validation Loss: 0.005034905874601784
+Validation Accuracy: 0.9995404411764706
+Validation Time: 0.05399918556213379
+Average time per iteration: 0.0015882113400627585
+-------------------------------------------------
+Task Index: 1
+Epoch: 4
+Train Loss: 0.012485510386292573
+Train Accuracy: 0.9963515228426396
+Epoch Time: 0.7225556373596191
+Average time per iteration: 0.003667795113500605
+-------------------------------------------------
+Task Index: 1Validation Loss: 0.004375545305425904
+Validation Accuracy: 0.9990808823529411
+Validation Time: 0.055046796798706055
+Average time per iteration: 0.0016190234352560604
+-------------------------------------------------
+Task Index: 2
+Epoch: 0
+Train Loss: 1.2528488564859614
+Train Accuracy: 0.765186095505618
+Epoch Time: 0.6658225059509277
+Average time per iteration: 0.0037405758761288074
+-------------------------------------------------
+Task Index: 2Validation Loss: 0.17899241050084433
+Validation Accuracy: 0.9641435186068217
+Validation Time: 0.04903364181518555
+Average time per iteration: 0.0016344547271728515
+-------------------------------------------------
+Task Index: 2
+Epoch: 1
+Train Loss: 0.148700047995937
+Train Accuracy: 0.9674750871202918
+Epoch Time: 0.6443169116973877
+Average time per iteration: 0.0036197579308842004
+-------------------------------------------------
+Task Index: 2Validation Loss: 0.11303845128665367
+Validation Accuracy: 0.972476851940155
+Validation Time: 0.04424643516540527
+Average time per iteration: 0.0014748811721801759
+-------------------------------------------------
+Task Index: 2
+Epoch: 2
+Train Loss: 0.10711384976931503
+Train Accuracy: 0.9748486826259098
+Epoch Time: 0.6370482444763184
+Average time per iteration: 0.0035789227217770695
+-------------------------------------------------
+Task Index: 2Validation Loss: 0.09254444688558579
+Validation Accuracy: 0.9750810186068217
+Validation Time: 0.05007362365722656
+Average time per iteration: 0.0016691207885742188
+-------------------------------------------------
+Task Index: 2
+Epoch: 3
+Train Loss: 0.0903959417025025
+Train Accuracy: 0.9782721376820896
+Epoch Time: 0.6519653797149658
+Average time per iteration: 0.0036627268523312688
+-------------------------------------------------
+Task Index: 2Validation Loss: 0.08231608954568705
+Validation Accuracy: 0.9776851852734884
+Validation Time: 0.048995018005371094
+Average time per iteration: 0.0016331672668457031
+-------------------------------------------------
+Task Index: 2
+Epoch: 4
+Train Loss: 0.08115129063973266
+Train Accuracy: 0.979810393258427
+Epoch Time: 0.6781249046325684
+Average time per iteration: 0.003809690475463867
+-------------------------------------------------
+Task Index: 2Validation Loss: 0.07676733875026305
+Validation Accuracy: 0.9797685186068217
+Validation Time: 0.05199122428894043
+Average time per iteration: 0.0017330408096313476
+-------------------------------------------------
+Task Index: 3
+Epoch: 0
+Train Loss: 3.6808812356120004
+Train Accuracy: 0.28629353533240515
+Epoch Time: 0.713238000869751
+Average time per iteration: 0.0037342303710458167
+-------------------------------------------------
+Task Index: 3Validation Loss: 0.5138576477766037
+Validation Accuracy: 0.92822265625
+Validation Time: 0.05599856376647949
+Average time per iteration: 0.0017499551177024841
+-------------------------------------------------
+Task Index: 3
+Epoch: 1
+Train Loss: 0.3313732140975473
+Train Accuracy: 0.9649869109947644
+Epoch Time: 0.7244505882263184
+Average time per iteration: 0.0037929350168917192
+-------------------------------------------------
+Task Index: 3Validation Loss: 0.20394447189755738
+Validation Accuracy: 0.97998046875
+Validation Time: 0.05002474784851074
+Average time per iteration: 0.0015632733702659607
+-------------------------------------------------
+Task Index: 3
+Epoch: 2
+Train Loss: 0.18049497590327138
+Train Accuracy: 0.9819385955471018
+Epoch Time: 0.7426676750183105
+Average time per iteration: 0.0038883124346508406
+-------------------------------------------------
+Task Index: 3Validation Loss: 0.14274130412377417
+Validation Accuracy: 0.98193359375
+Validation Time: 0.05403780937194824
+Average time per iteration: 0.0016886815428733826
+-------------------------------------------------
+Task Index: 3
+Epoch: 3
+Train Loss: 0.1346200102286813
+Train Accuracy: 0.9860111256544503
+Epoch Time: 0.6981291770935059
+Average time per iteration: 0.003655126581641392
+-------------------------------------------------
+Task Index: 3Validation Loss: 0.11572772503132
+Validation Accuracy: 0.9853515625
+Validation Time: 0.05100202560424805
+Average time per iteration: 0.0015938133001327515
+-------------------------------------------------
+Task Index: 3
+Epoch: 4
+Train Loss: 0.11152123944609577
+Train Accuracy: 0.9873200261780105
+Epoch Time: 0.7115623950958252
+Average time per iteration: 0.003725457565946729
+-------------------------------------------------
+Task Index: 3Validation Loss: 0.1004961941507645
+Validation Accuracy: 0.986328125
+Validation Time: 0.05499887466430664
+Average time per iteration: 0.0017187148332595825
+-------------------------------------------------
+Task Index: 4
+Epoch: 0
+Train Loss: 5.342438154119663
+Train Accuracy: 0.0
+Epoch Time: 0.728215217590332
+Average time per iteration: 0.003852990569261016
+-------------------------------------------------
+Task Index: 4Validation Loss: 3.570714585483074
+Validation Accuracy: 0.0009765625
+Validation Time: 0.05295991897583008
+Average time per iteration: 0.00165499746799469
+-------------------------------------------------
+Task Index: 4
+Epoch: 1
+Train Loss: 2.645714530238399
+Train Accuracy: 0.07379599569966554
+Epoch Time: 0.6775109767913818
+Average time per iteration: 0.003584714162917364
+-------------------------------------------------
+Task Index: 4Validation Loss: 1.8781598657369614
+Validation Accuracy: 0.22591145848855376
+Validation Time: 0.049997806549072266
+Average time per iteration: 0.0015624314546585083
+-------------------------------------------------
+Task Index: 4
+Epoch: 2
+Train Loss: 1.5040854026400854
+Train Accuracy: 0.4511108105144804
+Epoch Time: 0.6969218254089355
+Average time per iteration: 0.0036874170656557436
+-------------------------------------------------
+Task Index: 4Validation Loss: 1.1614651419222355
+Validation Accuracy: 0.6416015625
+Validation Time: 0.05408978462219238
+Average time per iteration: 0.001690305769443512
+-------------------------------------------------
+Task Index: 4
+Epoch: 3
+Train Loss: 1.0148537095892367
+Train Accuracy: 0.7366973306766893
+Epoch Time: 0.6830291748046875
+Average time per iteration: 0.0036139109778025795
+-------------------------------------------------
+Task Index: 4Validation Loss: 0.8428065590560436
+Validation Accuracy: 0.8199869804084301
+Validation Time: 0.05002403259277344
+Average time per iteration: 0.00156325101852417
+-------------------------------------------------
+Task Index: 4
+Epoch: 4
+Train Loss: 0.7834080243236804
+Train Accuracy: 0.8400598247215231
+Epoch Time: 0.6840975284576416
+Average time per iteration: 0.003619563642633024
+-------------------------------------------------
+Task Index: 4Validation Loss: 0.6787416124716401
+Validation Accuracy: 0.880859375
+Validation Time: 0.04800224304199219
+Average time per iteration: 0.0015000700950622559
+-------------------------------------------------
