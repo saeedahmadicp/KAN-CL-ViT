@@ -8,7 +8,7 @@ import torch
 
 from efficientkan import  KAN as efficientKAN
 from fastkan import FastKAN as fastKAN
-from kan import KAN as KANLayer
+from kan import KANLayer
 
 from continual_learning_trainer import ContinualLearningTrainer
 from utils import DivideDataset
@@ -71,20 +71,25 @@ class FastKAN(nn.Module):
         return x
 
 
-# class KAN_original(nn.Module):
-#     def __init__(self,  num_classes, dataset_name):
-#         super(FastKAN, self).__init__()
-#         if dataset_name == 'CIFAR10':
-#             self.input_size = 3072
-#         elif dataset_name == 'MNIST':
-#             self.input_size = 784
+class KAN_original(nn.Module):
+    def __init__(self,  num_classes, dataset_name, device='cuda'):
+        super(KAN_original, self).__init__()
+        if dataset_name == 'CIFAR10':
+            self.input_size = 3072
+        elif dataset_name == 'MNIST':
+            self.input_size = 784
             
-#         self.fastKAN = fastKAN([self.input_size, 256, num_classes])
+        self.first_layer = KANLayer(in_dim=self.input_size, out_dim=256, num=5, k=3, device=device)
+        self.second_layer = KANLayer(in_dim=256, out_dim=num_classes, num=5, k=3, device=device)
+        self.activation = nn.SELU()
         
-#     def forward(self, x):
-#         x = x.view(-1, self.input_size)
-#         x = self.fastKAN(x)
-#         return x
+    def forward(self, x):
+        x = x.view(-1, self.input_size)
+        x, _, _, _ = self.first_layer(x)
+        x = self.activation(x)
+        x ,_, _, _ = self.second_layer(x)
+
+        return x
 
 
 if __name__ == '__main__':
@@ -150,20 +155,25 @@ if __name__ == '__main__':
     MLP_model_1 = MLP(num_classes=10, dataset_name='CIFAR10').to(device)
     EfficientKAN_model_1 = EfficientKAN(num_classes=10, dataset_name='CIFAR10').to(device)
     FastKAN_model_1 = FastKAN(num_classes=10, dataset_name='CIFAR10').to(device)
+    KAN_original_model_1 = KAN_original(num_classes=10, dataset_name='CIFAR10', device=device).to(device)
     
     MLP_model_2 = MLP(num_classes=10, dataset_name='MNIST').to(device)
     EfficientKAN_model_2 = EfficientKAN(num_classes=10, dataset_name='MNIST').to(device)
     FastKAN_model_2 = FastKAN(num_classes=10, dataset_name='MNIST').to(device)
+    KAN_original_model_2 = KAN_original(num_classes=10, dataset_name='MNIST').to(device)
     
     
     ## define optimizer
     MLP_optimizer_1 = optim.AdamW(MLP_model_1.parameters(), lr=1e-3, weight_decay=1e-4)
     EfficientKAN_optimizer_1 = optim.AdamW(EfficientKAN_model_1.parameters(), lr=1e-3, weight_decay=1e-4)
     FastKAN_optimizer_1 = optim.AdamW(FastKAN_model_1.parameters(), lr=1e-3, weight_decay=1e-4)
+    KAN_original_optimizer_1 = optim.AdamW(KAN_original_model_1.parameters(), lr=1e-3, weight_decay=1e-4)
+    
     
     MLP_optimizer_2 = optim.AdamW(MLP_model_2.parameters(), lr=1e-3, weight_decay=1e-4)
     EfficientKAN_optimizer_2 = optim.AdamW(EfficientKAN_model_2.parameters(), lr=1e-3, weight_decay=1e-4)
     FastKAN_optimizer_2 = optim.AdamW(FastKAN_model_2.parameters(), lr=1e-3, weight_decay=1e-4)
+    KAN_original_optimizer_2 = optim.AdamW(KAN_original_model_2.parameters(), lr=1e-3, weight_decay=1e-4)
     
     
     ## define loss function
@@ -173,20 +183,24 @@ if __name__ == '__main__':
     schedular_MLP_1 =  optim.lr_scheduler.ExponentialLR(MLP_optimizer_1, gamma=0.8)
     schedular_EfficientKAN_1 = optim.lr_scheduler.ExponentialLR(EfficientKAN_optimizer_1, gamma=0.8)
     schedular_FastKAN_1 = optim.lr_scheduler.ExponentialLR(FastKAN_optimizer_1, gamma=0.8)
+    schedular_original_KAN_1 = optim.lr_scheduler.ExponentialLR(KAN_original_optimizer_1, gamma=0.8)
     
     schedular_MLP_2 =  optim.lr_scheduler.ExponentialLR(MLP_optimizer_2, gamma=0.8)
     schedular_EfficientKAN_2 = optim.lr_scheduler.ExponentialLR(EfficientKAN_optimizer_2, gamma=0.8)
     schedular_FastKAN_2 = optim.lr_scheduler.ExponentialLR(FastKAN_optimizer_2, gamma=0.8)
+    schedular_original_KAN_2 = optim.lr_scheduler.ExponentialLR(KAN_original_optimizer_2, gamma=0.8)
+    
+    
 
     
     if isMNIST:
-        models = [ MLP_model_2, EfficientKAN_model_2]
-        model_names = ['MLP', 'EfficientKAN']
+        models = [ MLP_model_2, EfficientKAN_model_2, FastKAN_model_2, KAN_original_model_2]
+        model_names = ['MLP', 'EfficientKAN', 'FastKAN', 'KAN_original']
         dataset_name = ['MNIST']
         train_dataset_loader = [train_task_dataset_loader]
         test_dataset_loader = [test_task_dataset_loader]
-        optimizers = [MLP_optimizer_2, EfficientKAN_optimizer_2, FastKAN_optimizer_2]
-        schedulars = [schedular_MLP_2, schedular_EfficientKAN_2, schedular_FastKAN_2]
+        optimizers = [MLP_optimizer_2, EfficientKAN_optimizer_2, FastKAN_optimizer_2, KAN_original_optimizer_2]
+        schedulars = [schedular_MLP_2, schedular_EfficientKAN_2, schedular_FastKAN_2, schedular_original_KAN_2]
     else:
         models = [MLP_model_1, EfficientKAN_model_1, FastKAN_model_1]
         model_names = ['MLP', 'EfficientKAN', 'FastKAN']
