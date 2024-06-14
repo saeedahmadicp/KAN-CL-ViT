@@ -17,7 +17,7 @@ from utils import DivideDataset
 
 # CNN model for CIFAR-10 with KANLinear
 class EfficientKAN(nn.Module):
-    def __init__(self, num_classes, dataset_name):
+    def __init__(self, num_classes, dataset_name, init_method='xavier'):
         super(EfficientKAN, self).__init__()
         
         if dataset_name == 'CIFAR10':
@@ -26,12 +26,30 @@ class EfficientKAN(nn.Module):
             self.input_size = 784
             
         self.efficientKAN = efficientKAN([self.input_size, 256, num_classes])
+        self.init_weights(init_method=init_method)
 
     def forward(self, x):
         x = x.view(-1, self.input_size)
         x = self.efficientKAN(x)
         return x
     
+    ## initialize the weights
+    def init_weights(self, init_method='xavier'):
+        init_method = {
+            'xavier': nn.init.xavier_normal_,
+            'kaiming': nn.init.kaiming_normal_,
+            'normal': nn.init.normal_,
+        }
+
+            
+        ## initialize the weights for the efficientKAN 
+        for m in self.efficientKAN.modules():
+            for name, param in m.named_parameters():
+                if name == 'base_weight' or name == 'spline_weight':
+                    init_method[init_method](param)
+                
+                    
+                    
 # CNN model for CIFAR-10 with KANLinear
 class MLP(nn.Module):
     def __init__(self, num_classes, dataset_name):
@@ -95,6 +113,20 @@ class KAN_original(nn.Module):
 if __name__ == '__main__':
     ## device
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+    
+    # define models
+    MLP_model_1 = MLP(num_classes=10, dataset_name='CIFAR10').to(device)
+    EfficientKAN_model_1 = EfficientKAN(num_classes=10, dataset_name='CIFAR10').to(device)
+    #FastKAN_model_1 = FastKAN(num_classes=10, dataset_name='CIFAR10').to(device)
+    #KAN_original_model_1 = KAN_original(num_classes=10, dataset_name='CIFAR10', device=device).to(device)
+    
+    MLP_model_2 = MLP(num_classes=10, dataset_name='MNIST').to(device)
+    EfficientKAN_model_2 = EfficientKAN(num_classes=10, dataset_name='MNIST').to(device)
+    #FastKAN_model_2 = FastKAN(num_classes=10, dataset_name='MNIST').to(device)
+    #KAN_original_model_2 = KAN_original(num_classes=10, dataset_name='MNIST').to(device)
+    
+    
     
     ## batch size
     batch_size = 64
@@ -151,29 +183,20 @@ if __name__ == '__main__':
     
     
     
-    ## define models
-    MLP_model_1 = MLP(num_classes=10, dataset_name='CIFAR10').to(device)
-    EfficientKAN_model_1 = EfficientKAN(num_classes=10, dataset_name='CIFAR10').to(device)
-    FastKAN_model_1 = FastKAN(num_classes=10, dataset_name='CIFAR10').to(device)
-    KAN_original_model_1 = KAN_original(num_classes=10, dataset_name='CIFAR10', device=device).to(device)
-    
-    MLP_model_2 = MLP(num_classes=10, dataset_name='MNIST').to(device)
-    EfficientKAN_model_2 = EfficientKAN(num_classes=10, dataset_name='MNIST').to(device)
-    FastKAN_model_2 = FastKAN(num_classes=10, dataset_name='MNIST').to(device)
-    KAN_original_model_2 = KAN_original(num_classes=10, dataset_name='MNIST').to(device)
+  
     
     
     ## define optimizer
     MLP_optimizer_1 = optim.AdamW(MLP_model_1.parameters(), lr=1e-3, weight_decay=1e-4)
     EfficientKAN_optimizer_1 = optim.AdamW(EfficientKAN_model_1.parameters(), lr=1e-3, weight_decay=1e-4)
-    FastKAN_optimizer_1 = optim.AdamW(FastKAN_model_1.parameters(), lr=1e-3, weight_decay=1e-4)
-    KAN_original_optimizer_1 = optim.AdamW(KAN_original_model_1.parameters(), lr=1e-3, weight_decay=1e-4)
+    #FastKAN_optimizer_1 = optim.AdamW(FastKAN_model_1.parameters(), lr=1e-3, weight_decay=1e-4)
+    #KAN_original_optimizer_1 = optim.AdamW(KAN_original_model_1.parameters(), lr=1e-3, weight_decay=1e-4)
     
     
     MLP_optimizer_2 = optim.AdamW(MLP_model_2.parameters(), lr=1e-3, weight_decay=1e-4)
     EfficientKAN_optimizer_2 = optim.AdamW(EfficientKAN_model_2.parameters(), lr=1e-3, weight_decay=1e-4)
-    FastKAN_optimizer_2 = optim.AdamW(FastKAN_model_2.parameters(), lr=1e-3, weight_decay=1e-4)
-    KAN_original_optimizer_2 = optim.AdamW(KAN_original_model_2.parameters(), lr=1e-3, weight_decay=1e-4)
+    #FastKAN_optimizer_2 = optim.AdamW(FastKAN_model_2.parameters(), lr=1e-3, weight_decay=1e-4)
+    #KAN_original_optimizer_2 = optim.AdamW(KAN_original_model_2.parameters(), lr=1e-3, weight_decay=1e-4)
     
     
     ## define loss function
@@ -182,33 +205,33 @@ if __name__ == '__main__':
     ## training schedular
     schedular_MLP_1 =  optim.lr_scheduler.ExponentialLR(MLP_optimizer_1, gamma=0.8)
     schedular_EfficientKAN_1 = optim.lr_scheduler.ExponentialLR(EfficientKAN_optimizer_1, gamma=0.8)
-    schedular_FastKAN_1 = optim.lr_scheduler.ExponentialLR(FastKAN_optimizer_1, gamma=0.8)
-    schedular_original_KAN_1 = optim.lr_scheduler.ExponentialLR(KAN_original_optimizer_1, gamma=0.8)
+    #schedular_FastKAN_1 = optim.lr_scheduler.ExponentialLR(FastKAN_optimizer_1, gamma=0.8)
+    #schedular_original_KAN_1 = optim.lr_scheduler.ExponentialLR(KAN_original_optimizer_1, gamma=0.8)
     
     schedular_MLP_2 =  optim.lr_scheduler.ExponentialLR(MLP_optimizer_2, gamma=0.8)
     schedular_EfficientKAN_2 = optim.lr_scheduler.ExponentialLR(EfficientKAN_optimizer_2, gamma=0.8)
-    schedular_FastKAN_2 = optim.lr_scheduler.ExponentialLR(FastKAN_optimizer_2, gamma=0.8)
-    schedular_original_KAN_2 = optim.lr_scheduler.ExponentialLR(KAN_original_optimizer_2, gamma=0.8)
+    #schedular_FastKAN_2 = optim.lr_scheduler.ExponentialLR(FastKAN_optimizer_2, gamma=0.8)
+    #schedular_original_KAN_2 = optim.lr_scheduler.ExponentialLR(KAN_original_optimizer_2, gamma=0.8)
     
     
 
     
     if isMNIST:
-        models = [ MLP_model_2, EfficientKAN_model_2, FastKAN_model_2, KAN_original_model_2]
+        models = [ MLP_model_2, EfficientKAN_model_2] #, FastKAN_model_2, KAN_original_model_2]
         model_names = ['MLP', 'EfficientKAN', 'FastKAN', 'KAN_original']
         dataset_name = ['MNIST']
         train_dataset_loader = [train_task_dataset_loader]
         test_dataset_loader = [test_task_dataset_loader]
-        optimizers = [MLP_optimizer_2, EfficientKAN_optimizer_2, FastKAN_optimizer_2, KAN_original_optimizer_2]
-        schedulars = [schedular_MLP_2, schedular_EfficientKAN_2, schedular_FastKAN_2, schedular_original_KAN_2]
+        optimizers = [MLP_optimizer_2, EfficientKAN_optimizer_2] #, FastKAN_optimizer_2, KAN_original_optimizer_2]
+        schedulars = [schedular_MLP_2, schedular_EfficientKAN_2] #, schedular_FastKAN_2, schedular_original_KAN_2]
     else:
-        models = [MLP_model_1, EfficientKAN_model_1, FastKAN_model_1]
+        models = [MLP_model_1, EfficientKAN_model_1] #, FastKAN_model_1]
         model_names = ['MLP', 'EfficientKAN', 'FastKAN']
         dataset_name = ['CIFAR10']
         train_dataset_loader = [train_loader]
         test_dataset_loader = [test_loader]
-        optimizers = [MLP_optimizer_1, EfficientKAN_optimizer_1, FastKAN_optimizer_1]
-        schedulars = [schedular_MLP_1, schedular_EfficientKAN_1, schedular_FastKAN_1]
+        optimizers = [MLP_optimizer_1, EfficientKAN_optimizer_1] #, FastKAN_optimizer_1]
+        schedulars = [schedular_MLP_1, schedular_EfficientKAN_1] #, schedular_FastKAN_1]
     
     
 
