@@ -60,15 +60,36 @@ if __name__ == '__main__':
     for task in range(num_of_task):
         train_task_dataset_loader[task] = DataLoader(train_CIFAR_task_datasets[task], batch_size=batch_size, shuffle=True)
         
+        
     test_Cifar_task_divider = DivideDataset(test_dataset, num_of_task, list(range(100)))
     test_CIFAR_task_datasets, tasks_classes = test_Cifar_task_divider.get_the_datasets()
     
     test_task_dataset_loader = {}
     for task in range(num_of_task):
         test_task_dataset_loader[task] = DataLoader(test_CIFAR_task_datasets[task], batch_size=batch_size, shuffle=False)
+        
     
+    ## replay dataset and loader
+    replay_dataset = {}
+    no_of_replay_samples = 2000
+    for current_task in range(1, num_of_task):
+        no_of_sample_per_task = no_of_replay_samples//current_task
+        for task in range(current_task):
+            ## get random no_of_sample_per_task samples from task dataset
+            indices = torch.randperm(len(train_CIFAR_task_datasets[task])).tolist()[:no_of_sample_per_task]
+            replay_samples = torch.utils.data.Subset(train_CIFAR_task_datasets[task], indices)
+            if current_task not in replay_dataset:
+                replay_dataset[current_task] = [replay_samples]
+            else:
+                replay_dataset[current_task].append(replay_samples)
+
     
-    
+    ## concatenate all replay samples and create a dataset loader
+    replay_dataset_loader = {}
+    for task in range(1, num_of_task):
+        replay_dataset[task] = torch.utils.data.ConcatDataset(replay_dataset[task])
+        replay_dataset_loader[task] = DataLoader(replay_dataset[task], batch_size=batch_size, shuffle=True)
+        
     
     ## define models
     Vit_MLP = VisionTransformer(img_size=224, patch_size=16, in_c=3, num_classes=100, embed_dim=256, depth=8, num_heads=8, mlp_ratio=4.0, 
@@ -80,8 +101,8 @@ if __name__ == '__main__':
     
     
     ## define optimizer
-    Vit_MLP_optimizer = optim.AdamW(Vit_MLP.parameters(), lr=1e-3, weight_decay=1e-4)
-    Vit_KAN_optimizer = optim.AdamW(Vit_KAN.parameters(), lr=1e-3, weight_decay=1e-4)
+    Vit_MLP_optimizer = optim.AdamW(Vit_MLP.parameters(), lr=1e-3)
+    Vit_KAN_optimizer = optim.AdamW(Vit_KAN.parameters(), lr=1e-3)
     
     
     
@@ -89,8 +110,8 @@ if __name__ == '__main__':
     criterion = nn.CrossEntropyLoss()
     
     ## training schedular
-    Vit_MLP_schedular =  optim.lr_scheduler.ExponentialLR(Vit_MLP_optimizer, gamma=0.955)
-    Vit_KAN_schedular = optim.lr_scheduler.ExponentialLR(Vit_KAN_optimizer, gamma=0.955)
+    Vit_MLP_schedular =  optim.lr_scheduler.StepLR(Vit_MLP_optimizer, step_size=5, gamma=0.9)
+    Vit_KAN_schedular = optim.lr_scheduler.StepLR(Vit_KAN_optimizer, step_size=5, gamma=0.9)
     
 
     models = [Vit_MLP, Vit_KAN]
@@ -98,6 +119,7 @@ if __name__ == '__main__':
     dataset_name = ['CIFAR100']
     train_dataset_loader = [train_task_dataset_loader]
     test_dataset_loader = [test_task_dataset_loader]
+    replay_dataset_loaders = [replay_dataset_loader]
     optimizers = [Vit_MLP_optimizer, Vit_KAN_optimizer]
     schedulars = [Vit_MLP_schedular, Vit_KAN_schedular]
    
@@ -106,14 +128,14 @@ if __name__ == '__main__':
     epoch_ditribution = {}
     for task in range(num_of_task):
         if task == 0:
-            epoch_ditribution[task] = 25
+            epoch_ditribution[task] = 35
         else:
-            epoch_ditribution[task] = 10
+            epoch_ditribution[task] = 15
     
     
     
-    file_path = 'saved_models\\CL_ViT_KAN_vs_MLP.txt'
-    file_path_cl_tasks = 'saved_models\\CL_ViT_KAN_vs_MLP_tasks.txt'
+    file_path = 'saved_models\\CL_ViT_KAN_vs_MLP_with_replay.txt'
+    file_path_cl_tasks = 'saved_models\\CL_ViT_KAN_vs_MLP_tasks_with_replay.txt'
     
     
     args_dict = {}
@@ -123,6 +145,7 @@ if __name__ == '__main__':
         args_dict[('dataset_name', index)] = dataset_name[index]
         args_dict[('trainloader', index)] = train_dataset_loader[index]
         args_dict[('testloader', index)] = test_dataset_loader[index]
+        args_dict[('replayloader', index)] = replay_dataset_loaders[index]
     
     
     args_dict['record_save_path'] = file_path

@@ -108,7 +108,7 @@ class ContinualLearningTrainer():
     
     
     
-    def train(self, model, train_loader, optimizer, epoch):
+    def train(self, model, train_loader, optimizer, epoch, replay_loader=None):
     
         loss_array = []
         accuracy_array = []
@@ -136,8 +136,22 @@ class ContinualLearningTrainer():
             epoch_time.append(timer.get_elapsed_time())
             
             
+        
             if batch_idx % 10 == 0:
                 print(f'Train Epoch: {epoch} [{batch_idx * len(data)}/{len(train_loader.dataset)} ({100. * batch_idx / len(train_loader):.0f}%)]\tLoss: {loss.item():.6f}')
+                
+        
+        ## replay the data
+        if replay_loader is not None and epoch % 3 == 0:
+            for batch_idx, (data, target) in enumerate(replay_loader):
+                data, target = data.to(device), target.to(device)
+                
+                optimizer.zero_grad()
+                output = model(data)
+                loss = nn.CrossEntropyLoss()(output, target) * 0.5
+                loss.backward()
+                optimizer.step()
+              
                 
         print(f'Train Epoch: {epoch} Loss: {np.mean(loss_array)} Accuracy: {np.mean(accuracy_array)}')
         with open(file_path, 'a') as f:
@@ -199,12 +213,13 @@ class ContinualLearningTrainer():
                 ## load the particular task dataset loader for the train and test data
                 train_loader = self.args_dict[('trainloader', dataset_index)][task_index]
                 test_loader = self.args_dict[('testloader', dataset_index)][task_index]
+                replay_loader = self.args_dict[('replayloader', dataset_index)][task_index] if task_index != 0 else None
                 
                 print(f'Task Index: {task_index}')
                 
                 for epoch in range(self.args_dict['epoch_distribution'][task_index]):
                     
-                    train_loss, train_accuracy = self.train(model=model, train_loader=train_loader, optimizer=optimizer, epoch=epoch)
+                    train_loss, train_accuracy = self.train(model=model, train_loader=train_loader, optimizer=optimizer, epoch=epoch, replay_loader=replay_loader)
                     test_loss, test_accuracy = self.evaluate(model=model, test_loader=test_loader, scheduler=scheduler)
                     
                     self.save_model(model_name, dataset_name, epoch, model, task_index)
