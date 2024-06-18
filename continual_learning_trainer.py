@@ -230,6 +230,15 @@ class ContinualLearningTrainer():
                     test_losses.append(test_loss)
                     
                 each_task_accuracy = max(test_accuracies)
+                
+                ## index of the maximum test accuracy
+                max_accuracy_epoch = test_accuracies.index(each_task_accuracy)
+                
+                
+                ## load the model with the best test accuracy
+                model = self.load_model(model_name, dataset_name, max_accuracy_epoch, model, task_index)
+                
+                
                 self.each_task_accuracy.append(each_task_accuracy)
                 
                 incremental_accuracy = self.average_classification_accuracy(model=model, test_loader=self.args_dict[('testloader', dataset_index)])
