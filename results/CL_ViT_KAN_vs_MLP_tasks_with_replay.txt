@@ -1,0 +1,112 @@
+Model name: ----------- Vit_MLP --------------
+Dataset name: ----------- CIFAR100 --------------
+--------------------Task----------------------
+Task Index: 0
+Incremental Accuracy after task 0: 0.566468253968254
+Each Task Accuracy: 0.5823412698412699
+--------------------Task----------------------
+Task Index: 1
+Incremental Accuracy after task 1: 0.2946428571428571
+Each Task Accuracy: 0.5744047619047619
+Forget Accuracy: 0.5595238095238095
+--------------------Task----------------------
+Task Index: 2
+Incremental Accuracy after task 2: 0.1765873015873016
+Each Task Accuracy: 0.5307539682539683
+Forget Accuracy: 0.5307539682539683
+--------------------Task----------------------
+Task Index: 3
+Incremental Accuracy after task 3: 0.13814484126984128
+Each Task Accuracy: 0.5694444444444444
+Forget Accuracy: 0.5694444444444444
+--------------------Task----------------------
+Task Index: 4
+Incremental Accuracy after task 4: 0.11210317460317461
+Each Task Accuracy: 0.5773809523809523
+Forget Accuracy: 0.5734126984126984
+--------------------Task----------------------
+Task Index: 5
+Incremental Accuracy after task 5: 0.09705687830687831
+Each Task Accuracy: 0.5992063492063492
+Forget Accuracy: 0.5992063492063492
+--------------------Task----------------------
+Task Index: 6
+Incremental Accuracy after task 6: 0.08829365079365079
+Each Task Accuracy: 0.6160714285714286
+Forget Accuracy: 0.6121031746031746
+--------------------Task----------------------
+Task Index: 7
+Incremental Accuracy after task 7: 0.06374007936507936
+Each Task Accuracy: 0.46130952380952384
+Forget Accuracy: 0.42361111111111116
+--------------------Task----------------------
+Task Index: 8
+Incremental Accuracy after task 8: 0.06018518518518518
+Each Task Accuracy: 0.5376984126984127
+Forget Accuracy: 0.5376984126984127
+--------------------Task----------------------
+Task Index: 9
+Incremental Accuracy after task 9: 0.060912698412698404
+Each Task Accuracy: 0.6091269841269841
+Forget Accuracy: 0.6091269841269841
+Avreage Global Forgetting Accuracy: 0.5572089947089948
+Last Task Accuracy: 0.060912698412698404
+Average Incremental Accuracy: 0.16581349206349205
+-------------------------------------------------
+
+Model name: ----------- Vit_KAN --------------
+Dataset name: ----------- CIFAR100 --------------
+--------------------Task----------------------
+Task Index: 0
+Incremental Accuracy after task 0: 0.5863095238095238
+Each Task Accuracy: 0.5962301587301587
+--------------------Task----------------------
+Task Index: 1
+Incremental Accuracy after task 1: 0.3040674603174603
+Each Task Accuracy: 0.5942460317460317
+Forget Accuracy: 0.5803571428571429
+--------------------Task----------------------
+Task Index: 2
+Incremental Accuracy after task 2: 0.18716931216931218
+Each Task Accuracy: 0.5724206349206349
+Forget Accuracy: 0.5724206349206349
+--------------------Task----------------------
+Task Index: 3
+Incremental Accuracy after task 3: 0.140625
+Each Task Accuracy: 0.5843253968253969
+Forget Accuracy: 0.5813492063492064
+--------------------Task----------------------
+Task Index: 4
+Incremental Accuracy after task 4: 0.11686507936507937
+Each Task Accuracy: 0.560515873015873
+Forget Accuracy: 0.5357142857142857
+--------------------Task----------------------
+Task Index: 5
+Incremental Accuracy after task 5: 0.10482804232804233
+Each Task Accuracy: 0.626984126984127
+Forget Accuracy: 0.6170634920634921
+--------------------Task----------------------
+Task Index: 6
+Incremental Accuracy after task 6: 0.09240362811791383
+Each Task Accuracy: 0.6527777777777778
+Forget Accuracy: 0.6438492063492064
+--------------------Task----------------------
+Task Index: 7
+Incremental Accuracy after task 7: 0.06708829365079365
+Each Task Accuracy: 0.4732142857142857
+Forget Accuracy: 0.4444444444444444
+--------------------Task----------------------
+Task Index: 8
+Incremental Accuracy after task 8: 0.05952380952380952
+Each Task Accuracy: 0.5466269841269841
+Forget Accuracy: 0.5466269841269841
+--------------------Task----------------------
+Task Index: 9
+Incremental Accuracy after task 9: 0.06478174603174604
+Each Task Accuracy: 0.6488095238095238
+Forget Accuracy: 0.6488095238095238
+Avreage Global Forgetting Accuracy: 0.5745149911816578
+Last Task Accuracy: 0.06478174603174604
+Average Incremental Accuracy: 0.17236618953136812
+-------------------------------------------------
+
