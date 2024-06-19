@@ -45,7 +45,7 @@ Setup
 ---
 Install the requirements
 ```bash
-pip install requriements.txt
+pip install requirements.txt
 ```
 and if in case there is still an issue installing the cudatoolkit and GPU version, then refer to the site [Pytorch](https://pytorch.org/get-started/locally/) or you can use the below commands for installing the Pytorch along with cudatoolkit
  

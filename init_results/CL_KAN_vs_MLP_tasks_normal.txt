@@ -1,0 +1,62 @@
+Model name: ----------- MLP --------------
+Dataset name: ----------- MNIST --------------
+--------------------Task----------------------
+Task Index: 0
+Incremental Accuracy after task 0: 0.9912109375
+Each Task Accuracy: 0.9912109375
+--------------------Task----------------------
+Task Index: 1
+Incremental Accuracy after task 1: 0.5
+Each Task Accuracy: 1.0
+Forget Accuracy: 1.0
+--------------------Task----------------------
+Task Index: 2
+Incremental Accuracy after task 2: 0.32763117286894056
+Each Task Accuracy: 0.9828935186068217
+Forget Accuracy: 0.9828935186068217
+--------------------Task----------------------
+Task Index: 3
+Incremental Accuracy after task 3: 0.2483154296875
+Each Task Accuracy: 0.99169921875
+Forget Accuracy: 0.99013671875
+--------------------Task----------------------
+Task Index: 4
+Incremental Accuracy after task 4: 0.21326746323529414
+Each Task Accuracy: 0.9814453125
+Forget Accuracy: 0.92578125
+Avreage Global Forgetting Accuracy: 0.9747028718392055
+Last Task Accuracy: 0.21326746323529414
+Average Incremental Accuracy: 0.4560850006583469
+-------------------------------------------------
+
+Model name: ----------- EfficientKAN --------------
+Dataset name: ----------- MNIST --------------
+--------------------Task----------------------
+Task Index: 0
+Incremental Accuracy after task 0: 0.9718128554522991
+Each Task Accuracy: 0.9718128554522991
+--------------------Task----------------------
+Task Index: 1
+Incremental Accuracy after task 1: 0.49816176470588236
+Each Task Accuracy: 0.9963235294117647
+Forget Accuracy: 0.9963235294117647
+--------------------Task----------------------
+Task Index: 2
+Incremental Accuracy after task 2: 0.3265629965105867
+Each Task Accuracy: 0.9369212965170542
+Forget Accuracy: 0.8946418847523484
+--------------------Task----------------------
+Task Index: 3
+Incremental Accuracy after task 3: 0.25177338646688296
+Each Task Accuracy: 0.9208984375
+Forget Accuracy: 0.8499262151618798
+--------------------Task----------------------
+Task Index: 4
+Incremental Accuracy after task 4: 0.22009102681980414
+Each Task Accuracy: 0.627766927704215
+Forget Accuracy: 0.25227864645421505
+Avreage Global Forgetting Accuracy: 0.748292568945052
+Last Task Accuracy: 0.22009102681980414
+Average Incremental Accuracy: 0.453680405991091
+-------------------------------------------------
+
