@@ -1,9 +1,9 @@
 ## Investigating the Strengths and Limitations of KAN in Continual Learning
 
-### Description
+Description
 ---
 <p align="justify">
-This project investigates the performance of different variants of Kolmogorov-Arnold Networks (KAN) for image classification tasks in a continual learning setting. We conducted two sets of experiments: one using standalone Multi-Layer Perceptrons (MLPs) and KAN variants, and another integrating KAN into the Vision Transformer (ViT) architecture.
+This project investigates the performance of different variants of Kolmogorov-Arnold Networks (KAN) [1] for image classification tasks in a continual learning setting. We conducted two sets of experiments: one using standalone Multi-Layer Perceptrons (MLPs) and KAN variants, and another integrating KAN into the Vision Transformer (ViT) [2] architecture.
 </p>
 
 <p align="justify">
@@ -31,8 +31,8 @@ The experiments were carried out on the MNIST and CIFAR100 datasets, which were 
 The primary objective was to investigate the strengths and limitations of KAN in a continual learning setting, where the model must learn new tasks while retaining knowledge from previously learned tasks. By comparing the performance of KAN variants with traditional MLPs and integrating KAN into the ViT architecture, we aimed to gain insights into the potential advantages and drawbacks of using KAN for continual learning tasks.
 </p>
 
-
-### Key Findings
+---
+Key Findings
 ---
 Here are the findings of our project:
 - In the case of standalone MLP and KAN experiments, the KAN model demonstrates superior performance on the CL task and shows better resistance to forgetting the previous knowledge while learning the new task.
@@ -40,7 +40,50 @@ Here are the findings of our project:
 
 <p align="center"> <img align="center" src="https://github.com/saeedahmadicp/KAN-CL-ViT/blob/main/results/ViT.png" alt="Performance Graph"> </p>
 
-### Future Work
+---
+Setup
+---
+Install the requirements
+```bash
+pip install requriements.txt
+```
+and if in case there is still an issue installing the cudatoolkit and GPU version, then refer to the site [Pytorch](https://pytorch.org/get-started/locally/) or you can use the below commands for installing the Pytorch along with cudatoolkit
+ 
+- Linux / Window
+  ```bash
+  pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
+  ```
+  
+- Mac
+  ```bash
+  pip3 install torch torchvision torchaudio
+  ```
+
+
+After the installation, use the below scripts for running the specific version of the code:
+
+- Use the below script for running the base version of the MLP and KAN 
+```bash
+python KAN_vs_MLP.py
+```
+
+- Use the below script for running the base version of the MLP and KAN with CNN layers
+```bash
+python cnn_KAN.py
+```
+
+- Use the below script for running the standalone MLP and KAN for class-based CL 
+```bash
+python CL_KAN_vs_MLP.py
+```
+
+- Use the below script for running the ViT-based MLP and KAN architectures for class-based CL 
+```bash
+python CL_ViT_MLP_vs_KAN.py
+```
+
+---
+Future Work
 ---
 Based on the findings and observations from this project, several potential future directions and improvements can be explored:
 - Running the experiments across more complex datasets to further evaluate the performance and scalability of KAN in continual learning scenarios.
